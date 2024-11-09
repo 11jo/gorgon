@@ -3,7 +3,7 @@ EXTEND_TOP ALATOS 20
 END
 
 EXTEND_BOTTOM ALATOS 17
-  IF ~Global("h_Ravenscar","GLOBAL",1)~ THEN REPLY @55501 DO ~SetGlobal("h_RavenNarlen","GLOBAL",1)~ /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
+  IF ~Global("h_Ravenscar","GLOBAL",1)~ THEN REPLY @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
   IF ~~ THEN REPLY @55503 /* A fortunate turn of events, I'd say. I'm glad to have made an impression. */ EXTERN ~NARLEN~ 29
 END
 
@@ -29,10 +29,6 @@ IF ~~ THEN BEGIN A3
 IF ~~ THEN DO ~
    AddJournalEntry(@352,QUEST)
    SetGlobal("h_Ravenscar","GLOBAL",2)~ EXIT
-IF ~Global("h_RavenNarlen","GLOBAL",1)~ THEN DO ~
-   AddJournalEntry(@352,QUEST)
-   SetGlobal("h_Ravenscar","GLOBAL",2)
-   SetGlobal("h_RavenNarlen","GLOBAL",2)~ EXTERN ~NARLEN~ 29
 END
 
 IF ~~ THEN BEGIN B1
