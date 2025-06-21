@@ -1,4 +1,4 @@
-EXTEND_TOP ALATOS 20
+EXTEND_BOTTOM ALATOS 20
   IF ~!Global("NarlenMove","GLOBAL",8) Dead("Resar") Global("h_Ravenscar","GLOBAL",1) Global("h_SpawnRavenscar","GLOBAL",0)~ THEN REPLY @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
 END
 
@@ -64,7 +64,7 @@ END
 
 END
 
-EXTEND_TOP ALATOS 1
+EXTEND_BOTTOM ALATOS 1
    +~GlobalGT("h_RigaldoQuest","GLOBAL",0) GlobalLT("h_RigaldoQuest","GLOBAL",14)~+ @55511 /* I understand the business well enough. I'm affiliated with the Gorgon's Eye guild in Beregost. */ GOTO B1
    +~Global("h_RigaldoQuest","GLOBAL",14)~+ @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO B4
 END

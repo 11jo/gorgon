@@ -1262,6 +1262,7 @@ COPY ~gorgon/cre/h_ziekdc.cre~ ~override/h_ziekdc.cre~        // Zieke's Bodygua
 COPY ~gorgon/cre/h_ziekec.cre~ ~override/h_ziekec.cre~        // Zieke
      SAY NAME1 @944
      SAY NAME2 @944
+	WRITE_ASCII SCRIPT_DEFAULT ~h_ziekec~ // Was missing
 
 COPY ~gorgon/cre/h_zieknc.cre~ ~override/h_zieknc.cre~        // Zieke's Bodyguard(Night)
      SAY NAME1 @943
