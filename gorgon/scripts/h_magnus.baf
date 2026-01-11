@@ -1,14 +1,16 @@
 IF
-         TimeOfDay(DAY)
+	TimeOfDay(DAY)
+	!IsActive(Myself)
 THEN
-         RESPONSE #100
-                  Activate(Myself)
+	RESPONSE #100
+		Activate(Myself)
 END
 
 IF
-         TimeOfDay(NIGHT)
+	TimeOfDay(NIGHT)
+	IsActive(Myself)
 THEN
-         RESPONSE #100
-                  Deactivate(Myself)
+	RESPONSE #100
+		Deactivate(Myself)
 END
 
