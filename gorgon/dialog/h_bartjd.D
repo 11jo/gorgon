@@ -65,7 +65,7 @@ END
 
 END
 
-EXTEND_TOP BART4 0
+EXTEND_BOTTOM BART4 0
    +~Global("h_ArioshQuest","GLOBAL",11) Global("h_JovialDues","GLOBAL",0)~+ @14019 /* Good evening. I've come to collect the Gorgon's Eye dues. */ GOTO J1
    +~Global("h_ArioshQuest","GLOBAL",11) Global("h_JovialDues","GLOBAL",0)~+ @14020 /* I'm here for the Gorgon's Eye's cut. Pay up now, and we won't have any trouble. */ GOTO J1
    +~HasItem("h_misc26","Container 1") Global("h_ArioshQuest","GLOBAL",17)~+ @14021 /* Listen closely, mate. I've planted a little surprise in your kitchen. A bottle filled with something highly flammable, with a fuse ready to light. You want to keep this place in one piece? You'll do as I say. */ GOTO A1

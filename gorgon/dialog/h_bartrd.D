@@ -39,7 +39,7 @@ END
 
 END
 
-EXTEND_TOP BART3 0
+EXTEND_BOTTOM BART3 0
    +~Global("h_ArioshQuest","GLOBAL",11) Global("h_RedSheafDues","GLOBAL",0)~+ @14511 /* Good evening. I've come to collect the Gorgon's Eye dues. */ GOTO B1
    +~Global("h_ArioshQuest","GLOBAL",11) Global("h_RedSheafDues","GLOBAL",0)~+ @14512 /* I'm here for the Gorgon's Eye's cut. Pay up now, and we won't have any trouble. */ GOTO B1
 END

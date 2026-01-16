@@ -283,7 +283,7 @@ END
 
 END
 
-EXTEND_TOP Karp 0
+EXTEND_BOTTOM Karp 0
    +~GlobalGT("h_RigaldoQuest","GLOBAL",7) Global("h_KarpGood","GLOBAL",2)~+ @42075 /* Karp, I thought you'd be on your way to Athkatla by now. Is there something wrong? */ GOTO K_43
    ++ @42076 /* I'll be going now. */ EXIT
 END

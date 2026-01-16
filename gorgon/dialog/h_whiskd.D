@@ -63,6 +63,6 @@ END
 
 END
 
-EXTEND_TOP BART16 0
+EXTEND_BOTTOM BART16 0
    +~Global("h_Whiskey","GLOBAL",1)~+ @66511 /* I've been told you serve a special Moonshae whiskey here. I'd like a bottle. */ GOTO J1
 END

@@ -38,7 +38,7 @@ END
 
 END
 
-EXTEND_TOP NOBW2 0
+EXTEND_BOTTOM NOBW2 0
    +~Global("h_TalkedToMaid","GLOBAL",1)~+ @49012 /* Is your daughter's name Sam, by chance? */ GOTO h_1
    ++ @49013 /* I'll be going now. */ EXIT
 END
