@@ -96,6 +96,8 @@ IF ~~ THEN DO ~
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD05",LastTalkedToBy,0,0,0)
+   GiveItemCreate("P#BAG02",LastTalkedToBy,0,0,0) // BG1 npc compatibility
+   GiveItemCreate("P#BAG01",LastTalkedToBy,0,0,0) // BG1 npc compatibility
    EscapeArea()~ EXIT
 END
 
@@ -124,6 +126,8 @@ IF ~~ THEN DO ~
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD05",LastTalkedToBy,0,0,0)
+   GiveItemCreate("P#BAG02",LastTalkedToBy,0,0,0) // BG1 npc compatibility
+   GiveItemCreate("P#BAG01",LastTalkedToBy,0,0,0) // BG1 npc compatibility
    EscapeArea()~ EXIT
 END
 
@@ -137,10 +141,8 @@ IF ~~ THEN BEGIN M12
 END
 
 IF ~~ THEN BEGIN M13
-   SAY @10537 /* Take your time. Once you've got the 500 gold, we'll settle the deal. The spot will be waiting for you. */
-IF ~~ THEN DO ~
-   SetGlobal("h_MerchantMoney","GLOBAL",1)
-   AddJournalEntry(@340,QUEST)~ EXIT
+	SAY @10537 /* Take your time. Once you've got the 500 gold, we'll settle the deal. The spot will be waiting for you. */
+		IF ~~ THEN DO ~SetGlobal("h_MerchantMoney","GLOBAL",1) AddJournalEntry(@340,QUEST)~ EXIT
 END
 
 IF WEIGHT #-1 ~Global("h_ProcusQuest","GLOBAL",1) Global("h_MerchantMoney","GLOBAL",1)~ THEN BEGIN M14
@@ -162,12 +164,11 @@ IF ~~ THEN BEGIN M15
 END
 
 IF ~~ THEN BEGIN M16
-   SAY @10541 /* Of course, friend. Allow me to get that for you. */
-IF ~~ THEN DO ~
-   Kill("merch2")
-   SetGlobal("h_ProcusQuest","GLOBAL",2)
-   AddJournalEntry(@341,QUEST)
-   ReputationInc(-2)~ EXIT
+	SAY @10541 /* Of course, friend. Allow me to get that for you. */
+		IF ~~ THEN DO ~Kill("merch2")
+						SetGlobal("h_ProcusQuest","GLOBAL",2)
+						AddJournalEntry(@341,QUEST)
+						ReputationInc(-2)~ EXIT
 END
 
 END
