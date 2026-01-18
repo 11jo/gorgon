@@ -1,21 +1,27 @@
 IF
-        Global("h_SpawnZieke","GLOBAL",1)
-
+	Global("h_SpawnZieke","GLOBAL",1)
 THEN
-        RESPONSE #100
-                 CreateCreature("h_ziekec",[628.736],W)
-                 SetGlobal("h_SpawnZieke","GLOBAL",2)
-                 Continue()
+	RESPONSE #100
+		CreateCreature("h_ziekec",[628.736],W)
+		SetGlobal("h_SpawnZieke","GLOBAL",2)
+		Continue()
 END
 
 IF
-        Global("h_SpawnZiekeDay","GLOBAL",1)
-
+	Global("h_SpawnZiekeDay","GLOBAL",1)
 THEN
-        RESPONSE #100
-                 CreateCreature("h_ziekdc",[749.586],W)
-                 SetGlobal("h_SpawnZiekeDay","GLOBAL",2)
-                 Continue()
+	RESPONSE #100
+		CreateCreature("h_ziekdc",[749.586],W)
+		SetGlobal("h_SpawnZiekeDay","GLOBAL",2)
+		Continue()
 END
 
+
+IF
+	GlobalGT("h_RigaldoQuest","GLOBAL",2)
+	Exists("h_ziekec")
+THEN
+	RESPONSE #100
+		ActionOverride("h_ziekec",DestroySelf())
+END
 
