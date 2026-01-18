@@ -311,7 +311,7 @@ IF ~~ THEN BEGIN 64
 IF ~~ THEN DO ~
    SetGlobal("h_AishaBounty","GLOBAL",5)
    AddJournalEntry(@423,QUEST)
-   AddExperienceParty(300)
+   AddexperienceParty(300)
    EscapeArea()~ EXIT
 END
 
@@ -348,6 +348,6 @@ IF ~~ THEN BEGIN 72
 IF ~~ THEN DO ~
    SetGlobal("h_AishaBounty","GLOBAL",5)
    AddJournalEntry(@423,QUEST)
-   AddExperienceParty(300)
+   AddexperienceParty(300)
    EscapeArea()~ EXIT
 END

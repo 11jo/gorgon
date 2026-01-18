@@ -113,7 +113,7 @@ IF ~~ THEN DO ~
    TakePartyItem("h_misc20")
    DestroyItem("h_misc19")
    DestroyItem("h_misc20")
-   AddExperienceParty(400)
+   AddexperienceParty(400)
    GiveGoldForce(200)~ EXIT
 END
 
@@ -128,7 +128,7 @@ IF ~~ THEN DO ~
    TakePartyItem("h_misc20")
    DestroyItem("h_misc19")
    DestroyItem("h_misc20")
-   AddExperienceParty(600)
+   AddexperienceParty(600)
    GiveGoldForce(400)~ EXIT
 END
 
@@ -205,7 +205,7 @@ IF ~~ THEN BEGIN 35
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",6)
    AddJournalEntry(@520,QUEST_DONE)
-   AddExperienceParty(400)
+   AddexperienceParty(400)
    GiveGoldForce(300)~ EXIT
 END
 
@@ -218,7 +218,7 @@ IF ~~ THEN BEGIN 37
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",6)
    AddJournalEntry(@520,QUEST_DONE)
-   AddExperienceParty(600)
+   AddexperienceParty(600)
    GiveGoldForce(300)~ EXIT
 END
 
@@ -235,7 +235,7 @@ IF ~~ THEN BEGIN 40
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",6)
    AddJournalEntry(@520,QUEST_DONE)
-   AddExperienceParty(600)
+   AddexperienceParty(600)
    GiveGoldForce(300)~ EXIT
 END
 
@@ -349,7 +349,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@523,QUEST_DONE)
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
-   AddExperienceParty(400)
+   AddexperienceParty(400)
    GiveGoldForce(450)~ EXIT
 END
 
@@ -365,7 +365,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@523,QUEST_DONE)
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
-   AddExperienceParty(400)
+   AddexperienceParty(400)
    GiveGoldForce(450)~ EXIT
 END
 
@@ -381,7 +381,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@523,QUEST_DONE)
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
-   AddExperienceParty(600)
+   AddexperienceParty(600)
    GiveGoldForce(450)~ EXIT
 END
 
@@ -397,7 +397,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@523,QUEST_DONE)
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    GiveGoldForce(450)~ EXIT
 END
 
@@ -477,7 +477,7 @@ IF ~~ THEN DO ~
       SetGlobal("h_ValeraQuest","GLOBAL",5)
       SetGlobal("h_ArioshQuest","GLOBAL",10)
       AddJournalEntry(@527,QUEST_DONE)
-      AddExperienceParty(600)
+      AddexperienceParty(600)
       GiveGoldForce(200)~ EXIT
 END
 
@@ -574,7 +574,7 @@ IF ~~ THEN DO ~
       ReputationInc(-1)
       TakePartyItemAll("h_misc23")
       DestroyItem("h_misc23")
-      AddExperienceParty(800)
+      AddexperienceParty(800)
       GiveGoldForce(600)~ EXIT
 END
 
@@ -662,7 +662,7 @@ IF ~~ THEN BEGIN 118
 IF ~~ THEN DO ~
       SetGlobal("h_ArioshQuest","GLOBAL",14)
       AddJournalEntry(@539,QUEST_DONE)
-      AddExperienceParty(800)
+      AddexperienceParty(800)
       GiveGoldForce(400)~ EXIT
 END
 
@@ -799,7 +799,7 @@ IF ~~ THEN BEGIN 145
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",19)
    AddJournalEntry(@551,QUEST_DONE)
-   AddExperienceParty(800)
+   AddexperienceParty(800)
    GiveGoldForce(400)~ EXIT
 END
 
@@ -864,7 +864,7 @@ END
 
 IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadGT("h_clarec",0) NumDeadGT("h_therec",0)~ THEN BEGIN 159
    SAY @10200 /* Aye, I've heard the whispers already. Word's spread like wildfire about those Valkyrie twins meetin' their untimely end. Good work, mate. */
-       +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",0)~+ @10201 /* Sleeker than a shadow, they never knew what hit 'em. */ DO ~AddExperienceParty(1200)~ GOTO 160
+       +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",0)~+ @10201 /* Sleeker than a shadow, they never knew what hit 'em. */ DO ~AddexperienceParty(1200)~ GOTO 160
        +~Global("h_ClareTalk","GLOBAL",2) Global("h_TheresaTalk","GLOBAL",0)~+ @10202 /* Clare caught a glimpse, but it was too late for her. */ GOTO 161
        +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",2)~+ @10203 /* Theresa had a moment, but it didn't save her. */ GOTO 161
        +~Global("h_ClareTalk","GLOBAL",2) Global("h_TheresaTalk","GLOBAL",2)~+ @10204 /* They both looked me in the eye before the end. */ GOTO 161
@@ -929,7 +929,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",22)
    SetGlobal("h_SpawnGorgonWatch","GLOBAL",1)
    AddJournalEntry(@558,QUEST_DONE)
-   AddExperienceParty(1200)~ EXIT
+   AddexperienceParty(1200)~ EXIT
 END
    
 IF ~Global("h_ArioshQuest","GLOBAL",22)~ THEN BEGIN 172

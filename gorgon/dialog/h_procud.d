@@ -114,7 +114,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnMerchant","GLOBAL",1)
    CreateCreature("h_tguarc",[3197.2699],S)
    AddJournalEntry(@342,QUEST)
-   AddExperienceParty(600)
+   AddexperienceParty(600)
    EscapeArea()~ EXIT
 END
 
@@ -281,7 +281,7 @@ IF ~~ THEN DO ~
    TakePartyItemAll("h_misc28")
    DestroyItem("h_misc28")
    AddJournalEntry(@348,QUEST)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 IF ~Global("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN THIRD_10
    SAY @52566 /* Rigaldo will be itchin' to hear about our success, so make your way back and give him the news. We're on the edge of something big, my friend. */ IF ~~ THEN EXIT

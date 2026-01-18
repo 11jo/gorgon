@@ -68,7 +68,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_KatredaBounty","GLOBAL",5)
    AddJournalEntry(@436,QUEST)
    GiveItem("AMUL22",LastTalkedToBy)
-   AddExperienceParty(600)
+   AddexperienceParty(600)
    ReputationInc(1)~ EXIT
 END
 

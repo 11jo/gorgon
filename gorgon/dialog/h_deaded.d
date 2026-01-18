@@ -266,7 +266,7 @@ IF ~~ THEN BEGIN 43
 IF ~~ THEN DO ~
    SetGlobal("h_BeatIsla","GLOBAL",3)
    AddJournalEntry(@460,USER)
-   AddExperienceParty(2000)
+   AddexperienceParty(2000)
    GiveGoldForce(2000)
    GiveItemCreate("h_leat01",LastTalkedToBy,0,0,0)~ EXIT
 END

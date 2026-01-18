@@ -1,14 +1,14 @@
 IF
-        GlobalGT("h_RigaldoQuest","GLOBAL",2)
+	GlobalGT("h_RigaldoQuest","GLOBAL",2)
 THEN
-         RESPONSE #100
-                  //Deactivate(Myself)
-                  DestroySelf()
+	RESPONSE #100
+		//Deactivate(Myself)
+		DestroySelf()
 END
 
 IF
-        Global("h_ZiekeRun","GLOBAL",1)
+	Global("h_ZiekeRun","GLOBAL",1)
 THEN
-         RESPONSE #100
-                  EscapeArea()
+	RESPONSE #100
+		EscapeArea()
 END

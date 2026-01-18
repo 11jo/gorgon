@@ -16,9 +16,9 @@ END
 IF ~~ THEN BEGIN 3
    SAY @41007 /* You son of a bitch! Try another step and I'll paint the grass with her blood, I swear it! */
        +~CheckStatGT(Player1,17,DEX) HasItemCategory(Player1,"BOW",0)~+ @41008 /* (Quickly draw and fire your bow.) */
-       DO ~Kill("h_isleyc") AddExperienceParty(250)~ EXIT
+       DO ~Kill("h_isleyc") AddexperienceParty(250)~ EXIT
        +~CheckStatGT(Player1,17,DEX) HasItemCategory(Player1,"XBOW",0)~+ @41009 /* (Quickly draw and fire your crossbow.) */
-       DO ~Kill("h_isleyc") AddExperienceParty(250)~ EXIT
+       DO ~Kill("h_isleyc") AddexperienceParty(250)~ EXIT
        ++ @41010 /* Think you're swift enough? Give it a shot! */ GOTO 4
        +~CheckStatLT(Player1,18,CHR)~+ @41011 /* You honorless craven! Face me and leave Ilena out of this! */ GOTO 4
        +~CheckStatGT(Player1,17,CHR)~+ @41011 /* You honorless craven! Face me and leave Ilena out of this! */  GOTO 5

@@ -75,7 +75,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@412,QUEST)
    TakePartyGold(300)
    DestroyGold(300)
-   AddExperienceParty(300)
+   AddexperienceParty(300)
    ReputationInc(1)
    EscapeArea()~ EXIT
 END

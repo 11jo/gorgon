@@ -23,7 +23,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@615,QUEST_DONE)
    TakePartyItemAll("h_misc15")
    DestroyItem("h_misc15")
-   AddExperienceParty(300)
+   AddexperienceParty(300)
    GiveGoldForce(400)~ EXIT
 END
 
@@ -36,7 +36,7 @@ IF ~~ THEN DO ~
    TakePartyItem("h_misc32")
    DestroyItem("h_misc15")
    DestroyItem("h_misc32")
-   AddExperienceParty(1000)
+   AddexperienceParty(1000)
    GiveGoldForce(800)~ EXIT
 END
 

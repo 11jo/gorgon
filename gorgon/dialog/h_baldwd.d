@@ -496,7 +496,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",4)
    SetGlobal("h_RigaldoQuest","GLOBAL",6)
    AddJournalEntry(@212,QUEST_DONE)
-   AddExperienceParty(800)
+   AddexperienceParty(800)
    MoveToPoint([922.1052])
    Face(SW)~ EXIT
 END

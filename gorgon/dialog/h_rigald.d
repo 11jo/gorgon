@@ -293,9 +293,9 @@ END
 
 IF ~~ THEN BEGIN 57
    SAY @7076 /* Do you have the prize? Show it here, let's have a look under the light. We need to make sure it's the gem we're after, not some fool's gold. */
-       +~Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDead("h_ziekec",0)~+ @7077 /* Got the diamond right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(600)~ GOTO 61
-       +~OR(2) Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1)~+ @7077 /* Got the diamond right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 63
-       +~Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDeadGT("h_ziekec",0)~+ @7077 /* Got the diamond right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 65
+       +~Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDead("h_ziekec",0)~+ @7077 /* Got the diamond right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddexperienceParty(600)~ GOTO 61
+       +~OR(2) Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1)~+ @7077 /* Got the diamond right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddexperienceParty(200)~ GOTO 63
+       +~Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDeadGT("h_ziekec",0)~+ @7077 /* Got the diamond right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddexperienceParty(200)~ GOTO 65
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc04") Global("h_TalkedToZieke","GLOBAL",1)~ THEN BEGIN 58
@@ -308,7 +308,7 @@ END
 
 IF ~~ THEN BEGIN 60
    SAY @7080 /* And amidst your daring display, did the gem stay firmly in your grasp, or did it slip through like shadows in the fray? Tell me you didn't scatter our prize to the winds in your hasty retreat. */
-       ++ @7081 /* Got the gem right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(100)~ GOTO 68
+       ++ @7081 /* Got the gem right here. */ DO ~AddJournalEntry(@311,QUEST_DONE) AddexperienceParty(100)~ GOTO 68
 END
 
 IF ~~ THEN BEGIN 61
@@ -574,7 +574,7 @@ IF ~~ THEN BEGIN 118
    SAY @7146 /* However, it also means a lost opportunity for profit, and it might have sent a stronger message if we'd kept it as a reminder to Gerard not to cross us. */
        +~!PartyHasItem("h_misc05")~+ @7147 /* Gerard seemed to understand the message loud and clear without that extra reminder. It felt like the right call at the time. */ GOTO 122
        +~!PartyHasItem("h_misc05")~+ @7148 /* It seemed like returning it would maintain a better balance, avoiding unnecessary complications or backlash. */ GOTO 122
-       +~PartyHasItem("h_misc05")~+ @7149 /* Actually, I swiped the necklace back off Gerard before leaving. I thought it best to give the impression of returning it, but still keep the upper hand by actually taking it with me. */ DO ~AddExperienceParty(400) TakePartyItem("h_misc05") DestroyItem("h_misc05") GiveGoldForce(300)~ GOTO 124
+       +~PartyHasItem("h_misc05")~+ @7149 /* Actually, I swiped the necklace back off Gerard before leaving. I thought it best to give the impression of returning it, but still keep the upper hand by actually taking it with me. */ DO ~AddexperienceParty(400) TakePartyItem("h_misc05") DestroyItem("h_misc05") GiveGoldForce(300)~ GOTO 124
 END
 
 IF ~~ THEN BEGIN 119
@@ -650,7 +650,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ZedaQuest","GLOBAL",2)
    SetGlobal("h_ZedaRiddle","GLOBAL",1)
    SetGlobal("h_GerardQuest","GLOBAL",4)
-   AddExperienceParty(400)
+   AddexperienceParty(400)
    AddJournalEntry(@361,QUEST_DONE)~ EXIT
 END
 
@@ -737,7 +737,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",8)
    TakePartyItem("h_misc17")
    DestroyItem("h_misc17")
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",8) GlobalLT("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN 153
@@ -893,7 +893,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",11)
    AddJournalEntry(@323,QUEST_DONE)
    GiveGoldForce(800)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",0) GlobalLT("h_BountyNumber","GLOBAL",3)~ THEN BEGIN 186
@@ -994,7 +994,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",8)
    AddJournalEntry(@349,QUEST_DONE)
    GiveGoldForce(800)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~OR(2) GlobalLT("h_BountyNumber","GLOBAL",6) GlobalLT("h_GilbaldQuest","GLOBAL",6) Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",8)~ THEN BEGIN 209
@@ -1068,7 +1068,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnAriosh","GLOBAL",1)
    SetGlobal("h_SpawnZylark","GLOBAL",6)
    AddJournalEntry(@362,QUEST_DONE)
-   AddExperienceParty(800)
+   AddexperienceParty(800)
    GiveGoldForce(600)~ EXIT
 END
 
@@ -1083,7 +1083,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnAriosh","GLOBAL",1)
    SetGlobal("h_SpawnZylark","GLOBAL",6)
    AddJournalEntry(@363,QUEST_DONE)
-   AddExperienceParty(800)
+   AddexperienceParty(800)
    GiveGoldForce(400)~ EXIT
 END
 
@@ -1100,7 +1100,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@363,QUEST_DONE)
    TakePartyItem("h_misc07")
    DestroyItem("h_misc07")
-   AddExperienceParty(800)
+   AddexperienceParty(800)
    GiveGoldForce(800)~ EXIT
 END
 
@@ -1250,7 +1250,7 @@ IF ~~ THEN BEGIN 259
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",15)
    AddJournalEntry(@359,QUEST_DONE)
-   AddExperienceParty(1200)
+   AddexperienceParty(1200)
    GiveGoldForce(1000)~ EXIT
 END
 
@@ -1446,7 +1446,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",7)
    AddJournalEntry(@331,QUEST_DONE)
    TakePartyItemAll("h_misc07")
-   AddExperienceParty(800)
+   AddexperienceParty(800)
    TakePartyGold(3000)
    GiveGoldForce(750)~ EXIT
 END
@@ -1474,7 +1474,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",7)
    AddJournalEntry(@331,QUEST_DONE)
    TakePartyItemAll("h_misc07")
-   AddExperienceParty(800)
+   AddexperienceParty(800)
    TakePartyGold(2400)
    GiveGoldForce(480)~ EXIT
 END

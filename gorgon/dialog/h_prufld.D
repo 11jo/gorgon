@@ -206,7 +206,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",5)
    SetGlobal("h_PruflasQuest","GLOBAL",3)
    AddJournalEntry(@334,QUEST)
-   AddExperienceParty(800)~ EXIT
+   AddexperienceParty(800)~ EXIT
 END
 
 

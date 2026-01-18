@@ -664,7 +664,7 @@ IF ~~ THEN BEGIN 142
    SAY @8187 /* When you feel ready to delve deeper into the shadows and face the challenges that lie ahead, return here. Your next trial awaits, and with it, a further step into our fold. */
 IF ~~ THEN DO ~
    SetGlobal("h_JoinMask","GLOBAL",2)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 

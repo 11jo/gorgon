@@ -294,7 +294,7 @@ IF ~~ THEN BEGIN 58
        ++ @69080 /* The candle. */ GOTO 59
        ++ @69081 /* The wood stove. */ GOTO 59
        ++ @69082 /* The room. */ GOTO 59
-       ++ @69083 /* The match. */ DO ~AddExperienceParty(100)~ GOTO 60
+       ++ @69083 /* The match. */ DO ~AddexperienceParty(100)~ GOTO 60
        ++ @69084 /* The oil lamp. */ GOTO 59
 END
 
@@ -319,7 +319,7 @@ END
 
 IF ~~ THEN BEGIN 62
    SAY @69093 /* There are three priests who all say Destin is their brother. Yet, Destin says he has no brothers. Who is lying? */
-       ++ @69094 /* Noone. */ DO ~AddExperienceParty(100)~ GOTO 64
+       ++ @69094 /* Noone. */ DO ~AddexperienceParty(100)~ GOTO 64
        ++ @69095 /* The priests. */ GOTO 63
        ++ @69096 /* Destin. */ GOTO 63
        ++ @69097 /* You. */ GOTO 63
@@ -351,7 +351,7 @@ IF ~~ THEN BEGIN 66
        ++ @69102 /* A pair of mirrors. */ GOTO 67
        ++ @69103 /* Gusts of wind. */ GOTO 67
        ++ @69104 /* Two birds. */ GOTO 67
-       ++ @69105 /* Day and night. */ DO ~AddExperienceParty(100)~ GOTO 68
+       ++ @69105 /* Day and night. */ DO ~AddexperienceParty(100)~ GOTO 68
        ++ @69106 /* A sickness and cure. */ GOTO 67
        ++ @69107 /* Heartache and love. */ GOTO 67
        ++ @69108 /* The temperature. */ GOTO 67
@@ -385,7 +385,7 @@ IF ~~ THEN BEGIN 70
        ++ @69115 /* Sound waves. */ GOTO 71
        ++ @69116 /* A message. */ GOTO 71
        ++ @69117 /* Darkness. */ GOTO 71
-       ++ @69118 /* An echo. */ DO ~AddExperienceParty(100)~ GOTO 72
+       ++ @69118 /* An echo. */ DO ~AddexperienceParty(100)~ GOTO 72
        ++ @69119 /* Shadows. */ GOTO 71
 END
 
@@ -462,7 +462,7 @@ END
 IF ~~ THEN BEGIN 83
    SAY @69137 /* I have a head, yet no body. I have leaves, yet no branches. What am I? */
        ++ @69138 /* A book. */ GOTO 84
-       ++ @69139 /* Lettuce. */ DO ~AddExperienceParty(200)~ GOTO 85
+       ++ @69139 /* Lettuce. */ DO ~AddexperienceParty(200)~ GOTO 85
        ++ @69140 /* A tree. */ GOTO 84
        ++ @69141 /* A flower. */ GOTO 84
        ++ @69142 /* A shadow. */ GOTO 84
@@ -495,7 +495,7 @@ IF ~~ THEN BEGIN 87
        ++ @69148 /* Memories. */ GOTO 88
        ++ @69149 /* Sleep. */ GOTO 88
        ++ @69150 /* Time. */ GOTO 88
-       ++ @69114 /* Footsteps. */ DO ~AddExperienceParty(200)~ GOTO 89
+       ++ @69114 /* Footsteps. */ DO ~AddexperienceParty(200)~ GOTO 89
        ++ @69151 /* Oxygen. */ GOTO 88
        ++ @69152 /* Water. */ GOTO 88
        ++ @69153 /* Daylight. */ GOTO 88
@@ -527,7 +527,7 @@ IF ~~ THEN BEGIN 91
        ++ @69158 /* Skeletons. */ GOTO 92
        ++ @69159 /* Planets. */ GOTO 92
        ++ @69160 /* Fire. */ GOTO 92
-       ++ @69161 /* Leaves. */ DO ~AddExperienceParty(200)~ GOTO 93
+       ++ @69161 /* Leaves. */ DO ~AddexperienceParty(200)~ GOTO 93
 END
 
 IF ~~ THEN BEGIN 92
@@ -557,7 +557,7 @@ IF ~~ THEN BEGIN 95
        ++ @69167 /* A thought. */ GOTO 96
        ++ @69168 /* A sentence. */ GOTO 96
        ++ @69169 /* The present. */ GOTO 96
-       ++ @69170 /* Ton. */ DO ~AddExperienceParty(200)~ GOTO 97
+       ++ @69170 /* Ton. */ DO ~AddexperienceParty(200)~ GOTO 97
        ++ @69171 /* The future. */ GOTO 96
 END
 
@@ -604,7 +604,7 @@ END
 
 IF ~~ THEN BEGIN 103
    SAY @69181 /* I am not alive, but I can grow. I don't have lungs, but I need air. I don't have a mouth, but water kills me. What am I? */
-       ++ @69160 /* Fire. */ DO ~AddExperienceParty(300)~ GOTO 105
+       ++ @69160 /* Fire. */ DO ~AddexperienceParty(300)~ GOTO 105
        ++ @69182 /* A candle. */ GOTO 104
        ++ @69183 /* A cloud. */ GOTO 104
        ++ @69184 /* A plant. */ GOTO 104
@@ -633,7 +633,7 @@ END
 
 IF ~~ THEN BEGIN 107
    SAY @69188 /* I am always hungry, I must always be fed. The finger I touch will soon turn red. What am I? */
-       ++ @69160 /* Fire. */ DO ~AddExperienceParty(300)~ GOTO 109
+       ++ @69160 /* Fire. */ DO ~AddexperienceParty(300)~ GOTO 109
        ++ @69189 /* The sun. */ GOTO 108
        ++ @69190 /* A vampire. */ GOTO 108
        ++ @69191 /* Rust. */ GOTO 108
@@ -664,7 +664,7 @@ IF ~~ THEN BEGIN 111
        ++ @69194 /* A game. */ GOTO 112
        ++ @69195 /* A secret. */ GOTO 112
        ++ @69196 /* A promise. */ GOTO 112
-       ++ @69197 /* A joke. */ DO ~AddExperienceParty(300)~ GOTO 113
+       ++ @69197 /* A joke. */ DO ~AddexperienceParty(300)~ GOTO 113
        ++ @69198 /* A puzzle. */ GOTO 112
        ++ @69111 /* A dream. */ GOTO 112
 END
@@ -694,7 +694,7 @@ IF ~~ THEN BEGIN 115
        ++ @69202 /* The wind. */ GOTO 116
        ++ @69142 /* A shadow. */ GOTO 116
        ++ @69203 /* A flame. */ GOTO 116
-       ++ @69204 /* A clock. */ DO ~AddExperienceParty(300)~ GOTO 117
+       ++ @69204 /* A clock. */ DO ~AddexperienceParty(300)~ GOTO 117
        ++ @69205 /* A mountain. */ GOTO 116
 END
 

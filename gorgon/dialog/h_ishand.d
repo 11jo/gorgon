@@ -95,7 +95,7 @@ END
 
 IF ~Global("h_IshaniTalk","GLOBAL",1)~ THEN BEGIN 19
    SAY @39529 /* Well, well, you're back sooner than I expected. Did you manage to find Lady Eudika's necklace? Or did you get distracted by some other shiny trinkets? */
-       +~PartyHasItem("h_misc24")~+ @39530 /* Well, let's just say the Moonlit Cascade now belongs to a more appreciative owner. */ DO ~TakePartyItem("h_misc24") DestroyItem("h_misc24") AddExperienceParty(600) AddJournalEntry(@543,QUEST)~ GOTO 20
+       +~PartyHasItem("h_misc24")~+ @39530 /* Well, let's just say the Moonlit Cascade now belongs to a more appreciative owner. */ DO ~TakePartyItem("h_misc24") DestroyItem("h_misc24") AddexperienceParty(600) AddJournalEntry(@543,QUEST)~ GOTO 20
        ++ @39531 /* I'm still working on it. */ EXIT
 END
 

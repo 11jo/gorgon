@@ -23,7 +23,6 @@ IF WEIGHT #-1 ~PartyHasItem("h_misc04")~ THEN BEGIN 4
 						SetGlobal("h_ZiekeRun","GLOBAL",1)
 						CreateCreature("h_zieknc",[576.458],E)
 						CreateCreature("h_zieknc",[532.504],E)
-						ActionOverride("h_ziekec",EscapeArea())
 						Enemy()~ EXIT
 END
 

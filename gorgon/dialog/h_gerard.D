@@ -24,15 +24,15 @@ END
 
 IF ~~ THEN BEGIN G_4
    SAY @36510 /* Return my property immediately, or I shall have the guards deal with you. */
-       +~CheckStatGT(Player1,17,STR)~+ @36511 /* Maybe you should reconsider your tone. I could've easily let that thief take your necklace, or worse. Remember, it's not just your valuables that need protection. */ DO ~SetGlobal("h_GerardStrength","GLOBAL",1) AddExperienceParty(200)~ GOTO G_8
+       +~CheckStatGT(Player1,17,STR)~+ @36511 /* Maybe you should reconsider your tone. I could've easily let that thief take your necklace, or worse. Remember, it's not just your valuables that need protection. */ DO ~SetGlobal("h_GerardStrength","GLOBAL",1) AddexperienceParty(200)~ GOTO G_8
        +~CheckStatLT(Player1,18,STR)~+ @36511 /* Maybe you should reconsider your tone. I could've easily let that thief take your necklace, or worse. Remember, it's not just your valuables that need protection. */ GOTO G_5
-       +~CheckStatGT(Player1,17,INT)~+ @36512 /* Consider this logically, Gerard. I intercepted that thief because your security failed. This incident proves that even your most precious items aren't safe. */ DO ~SetGlobal("h_GerardIntelligence","GLOBAL",1) AddExperienceParty(200)~ GOTO G_10
+       +~CheckStatGT(Player1,17,INT)~+ @36512 /* Consider this logically, Gerard. I intercepted that thief because your security failed. This incident proves that even your most precious items aren't safe. */ DO ~SetGlobal("h_GerardIntelligence","GLOBAL",1) AddexperienceParty(200)~ GOTO G_10
        +~CheckStatLT(Player1,18,INT)~+ @36512 /* Consider this logically, Gerard. I intercepted that thief because your security failed. This incident proves that even your most precious items aren't safe. */ GOTO G_5
-       +~CheckStatGT(Player1,17,WIS)~+ @36513 /* Wisdom often outweighs pride. Your safety and legacy are at stake, including this little bauble. It's prudent to foresee the benefits of our protection. */ DO ~SetGlobal("h_GerardWisdom","GLOBAL",1) AddExperienceParty(200)~ GOTO G_12
+       +~CheckStatGT(Player1,17,WIS)~+ @36513 /* Wisdom often outweighs pride. Your safety and legacy are at stake, including this little bauble. It's prudent to foresee the benefits of our protection. */ DO ~SetGlobal("h_GerardWisdom","GLOBAL",1) AddexperienceParty(200)~ GOTO G_12
        +~CheckStatLT(Player1,18,WIS)~+ @36513 /* Wisdom often outweighs pride. Your safety and legacy are at stake, including this little bauble. It's prudent to foresee the benefits of our protection. */ GOTO G_5
-       +~CheckStatGT(Player1,17,CHR)~+ @36514 /* This piece could've been lost forever. Our protection ensures your treasures, and your well-being, remain intact. */ DO ~SetGlobal("h_GerardCharisma","GLOBAL",1) AddExperienceParty(200)~ GOTO G_14
+       +~CheckStatGT(Player1,17,CHR)~+ @36514 /* This piece could've been lost forever. Our protection ensures your treasures, and your well-being, remain intact. */ DO ~SetGlobal("h_GerardCharisma","GLOBAL",1) AddexperienceParty(200)~ GOTO G_14
        +~CheckStatLT(Player1,18,CHR)~+ @36514 /* This piece could've been lost forever. Our protection ensures your treasures, and your well-being, remain intact. */ GOTO G_5
-       +~CheckStatGT(Player1,17,CHR)~+ @36515 /* With all due respect, good sense goes a long way. This pendant is a reminder of vulnerabilities. Let's maintain a relationship that ensures your prosperity and safety. */ DO ~SetGlobal("h_GerardCharisma","GLOBAL",1) AddExperienceParty(200)~ GOTO G_16
+       +~CheckStatGT(Player1,17,CHR)~+ @36515 /* With all due respect, good sense goes a long way. This pendant is a reminder of vulnerabilities. Let's maintain a relationship that ensures your prosperity and safety. */ DO ~SetGlobal("h_GerardCharisma","GLOBAL",1) AddexperienceParty(200)~ GOTO G_16
        +~CheckStatLT(Player1,18,CHR)~+ @36515 /* With all due respect, good sense goes a long way. This pendant is a reminder of vulnerabilities. Let's maintain a relationship that ensures your prosperity and safety. */ GOTO G_5
 END
 

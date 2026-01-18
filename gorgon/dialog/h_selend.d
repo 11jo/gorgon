@@ -102,7 +102,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",5)
    EscapeArea()
    AddJournalEntry(@346,QUEST)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~Global("h_SelenaQuest","GLOBAL",2)~ THEN BEGIN 17

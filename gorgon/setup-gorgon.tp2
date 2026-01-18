@@ -1271,6 +1271,8 @@ COPY ~gorgon/cre/h_zieknc.cre~ ~override/h_zieknc.cre~        // Zieke's Bodygua
 COPY ~gorgon/cre/h_zylarc.cre~ ~override/h_zylarc.cre~        // Zylark
      SAY NAME1 @945
      SAY NAME2 @945
+	WRITE_ASCII SCRIPT_OVERRIDE ~h_zylars~
+	WRITE_ASCII SCRIPT_DEFAULT ~~
      
 COPY ~gorgon/cre/h_pros2c.cre~ ~override/h_pros2c.cre~        // Prostitute(2)
      SAY NAME1 @908

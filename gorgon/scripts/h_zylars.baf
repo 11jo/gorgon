@@ -1,17 +1,15 @@
 IF
-        Global("h_SpawnZylark","GLOBAL",1)
-
+	Global("h_SpawnZylark","GLOBAL",1)
 THEN
-        RESPONSE #100
-                 Wait(1)
-                 StartDialog("h_zylard",[PC])
+	RESPONSE #100
+		Wait(1)
+		StartDialog("h_zylard",[PC])
 END
 
 IF
-        Global("h_SpawnZylark","GLOBAL",2)
-
+	Global("h_SpawnZylark","GLOBAL",2)
 THEN
-        RESPONSE #100
-                 Enemy()
+	RESPONSE #100
+		Enemy()
 END
 

@@ -69,7 +69,7 @@ IF ~~ THEN BEGIN 15
 IF ~~ THEN DO ~
    SetGlobal("h_WatchTalk","GLOBAL",1)
    Kill("h_inspec")
-   AddExperienceParty(1200)~ EXIT
+   AddexperienceParty(1200)~ EXIT
 END
 
 IF ~~ THEN BEGIN 16

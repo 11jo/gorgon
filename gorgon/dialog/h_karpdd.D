@@ -224,7 +224,7 @@ IF ~~ THEN DO ~
    GiveItem("h_misc17",LastTalkedToBy())
    GiveItem("RING06",LastTalkedToBy())
    GiveItem("h_misc06",LastTalkedToBy())
-   AddExperienceParty(300)~ EXIT
+   AddexperienceParty(300)~ EXIT
 END
 
 IF ~~ THEN BEGIN K_37
@@ -241,7 +241,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_KarpGood","GLOBAL",1)
    AddJournalEntry(@320,QUEST_DONE)
    GiveItem("h_misc06",LastTalkedToBy())
-   AddExperienceParty(300)~ EXIT
+   AddexperienceParty(300)~ EXIT
 END
 
 IF ~~ THEN BEGIN K_40

@@ -420,7 +420,7 @@ IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    AddJournalEntry(@413,QUEST_DONE)
    GiveGoldForce(500)
-   AddExperienceParty(300)~ EXIT
+   AddexperienceParty(300)~ EXIT
 END
 
 IF ~~ THEN BEGIN 88
@@ -489,7 +489,7 @@ IF ~~ THEN DO ~
    TakePartyItem("h_misc09")
    DestroyItem("h_misc09")
    GiveGoldForce(500)
-   AddExperienceParty(300)~ EXIT
+   AddexperienceParty(300)~ EXIT
 END
 
 IF ~~ THEN BEGIN 101
@@ -545,7 +545,7 @@ IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    AddJournalEntry(@425,QUEST_DONE)
    GiveGoldForce(500)
-   AddExperienceParty(300)~ EXIT
+   AddexperienceParty(300)~ EXIT
 END
 
 
@@ -1170,7 +1170,7 @@ IF ~~ THEN DO ~
    DestroyItem("h_misc11")
    AddJournalEntry(@430,QUEST_DONE)
    GiveGoldForce(1000)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 237
@@ -1194,7 +1194,7 @@ IF ~~ THEN DO ~
    DestroyItem("h_misc10")
    AddJournalEntry(@429,QUEST_DONE)
    GiveGoldForce(500)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 241
@@ -1230,7 +1230,7 @@ IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    AddJournalEntry(@433,QUEST_DONE)
    GiveGoldForce(500)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 247
@@ -1292,7 +1292,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_MagnusBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    GiveGoldForce(500)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 258
@@ -1311,7 +1311,7 @@ IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    AddJournalEntry(@445,QUEST_DONE)
    GiveGoldForce(1000)
-   AddExperienceParty(600)~ EXIT
+   AddexperienceParty(600)~ EXIT
 END
 
 
@@ -1997,7 +1997,7 @@ IF ~~ THEN DO ~
    TakePartyItem("h_misc30")
    DestroyItem("h_misc30")
    GiveGoldForce(500)
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    ReputationInc(1)
    AddJournalEntry(@450,QUEST_DONE)~ EXIT
 END
@@ -2014,7 +2014,7 @@ IF ~~ THEN DO ~
    TakePartyItem("h_misc30")
    DestroyItem("h_misc30")
    GiveGoldForce(1000)
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    ReputationInc(-1)
    AddJournalEntry(@451,QUEST_DONE)~ EXIT
 END
@@ -2058,7 +2058,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_VarlindBountyEnd","GLOBAL",1)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    GiveGoldForce(500)
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    AddJournalEntry(@455,QUEST_DONE)~ EXIT
 END
 
@@ -2080,7 +2080,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_VarlindBounty","GLOBAL",2)
    SetGlobal("h_VarlindBountyEnd","GLOBAL",1)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    AddJournalEntry(@456,QUEST_DONE)~ EXIT
 END
 
@@ -2142,7 +2142,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_IslaBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    GiveGoldForce(500)
-   AddExperienceParty(900)~ EXIT
+   AddexperienceParty(900)~ EXIT
 END
 
 IF ~~ THEN BEGIN 420
@@ -2180,7 +2180,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_IslaBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    GiveGoldForce(500)
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    AddJournalEntry(@461,QUEST_DONE)~ EXIT
 END
 
@@ -2217,7 +2217,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_IslaBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    GiveGoldForce(500)
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    AddJournalEntry(@461,QUEST_DONE)~ EXIT
 END
 
@@ -2242,7 +2242,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_IslaBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    GiveGoldForce(500)
-   AddExperienceParty(900)
+   AddexperienceParty(900)
    AddJournalEntry(@461,QUEST_DONE)~ EXIT
 END
 

@@ -347,7 +347,7 @@ IF ~~ THEN BEGIN 61
 IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",5)
    AddJournalEntry(@716,QUEST_DONE)
-   AddExperienceParty(800)~ EXIT
+   AddexperienceParty(800)~ EXIT
 END
 
 IF WEIGHT #-1 ~Global("h_MerediaQuest","GLOBAL",4)~ THEN BEGIN 62
@@ -368,7 +368,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",5)
    SetGlobal("h_IlenaLeaves","GLOBAL",0)
    AddJournalEntry(@715,QUEST_DONE)
-   AddExperienceParty(1000)
+   AddexperienceParty(1000)
    GiveGoldForce(500)~ EXIT
 END
 
