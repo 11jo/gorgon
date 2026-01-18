@@ -1,9 +1,8 @@
 IF
-        Global("h_SpawnIshani","GLOBAL",1)
-
+	Global("h_SpawnIshani","GLOBAL",1)
 THEN
-        RESPONSE #100
-                 CreateCreature("h_ishanc",[444.163],W)
-                 SetGlobal("h_SpawnIshani","GLOBAL",2)
-                 Continue()
+	RESPONSE #100
+		CreateCreature("h_ishanc",[371.235],W)
+		SetGlobal("h_SpawnIshani","GLOBAL",2)
+		Continue()
 END
