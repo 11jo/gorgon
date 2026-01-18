@@ -27,28 +27,27 @@ END
 
 IF ~~ THEN BEGIN 4
    SAY @41013 /* You idiot! */
-IF ~~ THEN DO ~
-   Kill("h_ilenac")
-   SetGlobal("h_IlenaDied","GLOBAL",1)
-   AddJournalEntry(@713,QUEST)
-   Enemy()~ EXIT
+		IF ~~ THEN DO ~Kill("h_ilenac")
+						SetGlobal("h_IlenaDied","GLOBAL",1)
+						AddJournalEntry(@713,QUEST)
+						Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
    SAY @41014 /* Who are you to question honor? Draw your blade and let's settle this! */
-IF ~~ THEN DO ~
-   Enemy()~ EXIT
+		IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7
-   SAY @41015 /* Think me daft, do you? Why would I choose suicide when freedom beckons before my eyes! */
-       ++ @41016 /* You'll never escape your deeds! You murdered your wife and abducted Ilena! How do you think this ends? */ GOTO 8
-       ++ @41017 /* It's the only righteous path! Atone for the death of your wife, and drop your weapons, now! */ GOTO 8
-       ++ @41018 /* Then you leave me no choice. Time to die, Isley! */ GOTO 4
+	SAY @41015 /* Think me daft, do you? Why would I choose suicide when freedom beckons before my eyes! */
+		++ @41016 /* You'll never escape your deeds! You murdered your wife and abducted Ilena! How do you think this ends? */ GOTO 8
+		++ @41017 /* It's the only righteous path! Atone for the death of your wife, and drop your weapons, now! */ GOTO 8
+		++ @41018 /* Then you leave me no choice. Time to die, Isley! */ GOTO 4
 END
 
 IF ~~ THEN BEGIN 8
-   SAY @41019 /* Galatea's dead? No... no! She was breathing when I left! I thought... I thought... */ IF ~~ THEN GOTO 9
+	SAY @41019 /* Galatea's dead? No... no! She was breathing when I left! I thought... I thought... */
+		IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
@@ -58,18 +57,17 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-   SAY  @41023 /* I... I can't! I'll kill Ilena, I'll kill you, and then I'll kill myself! RraaAAAAAGH! */
-IF ~~ THEN DO ~
-   Face(N)
-   Kill("h_ilenac")
-   SetGlobal("h_IlenaDied","GLOBAL",1)
-   AddJournalEntry(@713,QUEST)
-   Enemy()~ EXIT
+	SAY  @41023 /* I... I can't! I'll kill Ilena, I'll kill you, and then I'll kill myself! RraaAAAAAGH! */
+		IF ~~ THEN DO ~Face(N)
+						Kill("h_ilenac")
+						SetGlobal("h_IlenaDied","GLOBAL",1)
+						AddJournalEntry(@713,QUEST)
+						Enemy()~ EXIT
 END
 
 
 CHAIN
-   IF ~Global("h_MerediaQuest","GLOBAL",2)~ THEN h_isleyd 0
+	IF ~Global("h_MerediaQuest","GLOBAL",2)~ THEN h_isleyd 0
 @41024 /* Hold still while I secure the ropes. Can't risk you slippin' away, now. */
    =
 @41025 /* Stand still and keep your mouth shut. Got it? */
@@ -85,7 +83,6 @@ CHAIN
 @41030 /* Mhm. */
    == h_isleyd
 @41031 /* Good, lass. Now, wait here and I'll be back in a minute. */
-   DO ~
-      SetGlobal("h_MerediaQuest","GLOBAL",3)
-      SetGlobal("h_IsleyDialog","GLOBAL",1)~
+   DO ~SetGlobal("h_MerediaQuest","GLOBAL",3)
+		SetGlobal("h_IsleyDialog","GLOBAL",1)~
 EXIT

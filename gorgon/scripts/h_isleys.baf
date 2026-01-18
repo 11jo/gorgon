@@ -1,28 +1,31 @@
 IF
-	See([PC])
+	OR(2)
+		Detect([PC])
+		See([PC])
 	NumberOfTimesTalkedTo(0)
 THEN
 	RESPONSE #100
-		 ClearAllActions()
-		 SmallWait(5)
-                 StartCutSceneMode()
-                 CutSceneId(Player1)
-                 MoveViewObject("h_isleyc",VERY_FAST)
-                 Explore()
-                 Wait(3)
-                 EndCutSceneMode()
-		 StartDialog("h_isleyd",[PC])
+		ClearAllActions()
+		SmallWait(5)
+		StartCutSceneMode()
+		CutSceneId(Player1)
+		MoveViewObject("h_isleyc",VERY_FAST)
+		Explore()
+		Wait(3)
+		EndCutSceneMode()
+		StartDialog("h_isleyd",[PC])
 END
 
 IF
+	See([PC])
 	Global("h_IsleyDialog","GLOBAL",1)
 THEN
 	RESPONSE #100
-	         StartCutSceneMode()
-                 CutSceneId("h_isleyc")
-                 FaceObject([PC])
-                 SmallWait(5)
-                 EndCutSceneMode()
-                 StartDialog("h_isleyd",[PC])
-                 SetGlobal("h_IsleyDialog","GLOBAL",2)
+		StartCutSceneMode()
+		CutSceneId("h_isleyc")
+		FaceObject([PC])
+		SmallWait(5)
+		EndCutSceneMode()
+		SetGlobal("h_IsleyDialog","GLOBAL",2)
+		StartDialog("h_isleyd",[PC])
 END
