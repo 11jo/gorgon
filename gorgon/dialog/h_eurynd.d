@@ -205,6 +205,11 @@ IF ~~ THEN DO ~
    GiveItemCreate("h_dart01",LastTalkedToBy,0,0,0)~ EXIT
 END
 
+IF ~~ THEN BEGIN KERY_66
+	SAY @32560 /* The process was a success and the Kerykeion piece has been transformed into a deviously, deadly dart. */
+		IF ~~ THEN DO ~SetGlobal("h_KeryDart","GLOBAL",2) GiveItemCreate("h_dart01",LastTalkedToBy,0,0,0)~ EXIT
+END
+
 IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KerySword","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ THEN BEGIN KERY_7
    SAY @32536 /* Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into a very stealthy blade. */
 IF ~~ THEN DO ~
@@ -212,20 +217,32 @@ IF ~~ THEN DO ~
    GiveItemCreate("h_sw1h01",LastTalkedToBy,0,0,0)~ EXIT
 END
 
+IF ~~ THEN BEGIN KERY_77
+	SAY @32561 /* The process was a success and the Kerykeion piece has been transformed into a very stealthy blade. */
+		IF ~~ THEN DO ~SetGlobal("h_KerySword","GLOBAL",2) GiveItemCreate("h_sw1h01",LastTalkedToBy,0,0,0)~ EXIT
+END
 
 IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryKatana","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ THEN BEGIN KERY_8
-   SAY @32537 /* I was able to infuse the Kerykeion piece with the large chunk of metal you brought me. It resulted in this extremely powerful katana. */
+   SAY @32537 /* Welcome back, <CHARNAME>. I was able to infuse the Kerykeion piece with the large chunk of metal you brought me. It resulted in this extremely powerful katana. */
 IF ~~ THEN DO ~
    SetGlobal("h_KeryKatana","GLOBAL",2)
    GiveItemCreate("h_sw1h02",LastTalkedToBy,0,0,0)~ EXIT
 END
 
+IF ~~ THEN BEGIN KERY_88
+	SAY @32562 /* I was able to infuse the Kerykeion piece with the large chunk of metal you brought me. It resulted in this extremely powerful katana. */
+		IF ~~ THEN DO ~SetGlobal("h_KeryKatana","GLOBAL",2) GiveItemCreate("h_sw1h02",LastTalkedToBy,0,0,0)~ EXIT
+END
+
 IF WEIGHT #-2 ~Global("h_BetrayBaldwin","GLOBAL",5)~ THEN BEGIN BETRAY_1
    SAY @32538 /* I'll be here for a little while longer to make sure the acquisition goes smoothly. Do you need any equipment in the meantime? */
-       ++ @32504 /* Sure, let me see what you have. */ GOTO STORE_1
-       ++ @32505 /* Do I have any equipment that you can upgrade? */ GOTO UPGRADE_1
-       +~PartyHasItem("h_misc03")~+ @32503 /* I have brought back what remains of the Kerykeion. Would you be able to repair it in any way? */ GOTO KERY_1
-       ++ @32506 /* I'll be leaving now. */ EXIT
+		++ @32504 /* Sure, let me see what you have. */ GOTO STORE_1
+		++ @32505 /* Do I have any equipment that you can upgrade? */ GOTO UPGRADE_1
+		+ ~PartyHasItem("h_misc03")~ + @32503 /* I have brought back what remains of the Kerykeion. Would you be able to repair it in any way? */ GOTO KERY_1
+		++ @32506 /* I'll be leaving now. */ EXIT
+		+ ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryKatana","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ + @32565 /* About the katana. */ GOTO KERY_88
+		+ ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KerySword","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ + @32564 /* About the short sword. */ GOTO KERY_77
+		+ ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryDart","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ + @32563 /* About the throwing dart. */ GOTO KERY_66
 END
 
 IF ~~ THEN BEGIN ARMOR_2

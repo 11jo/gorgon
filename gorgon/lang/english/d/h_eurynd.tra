@@ -35,7 +35,7 @@
 @32534 = ~I should be able to do that. But keep in mind I'll have no time frame on when it will be completed. There is truly no way of knowing. Continue on with your usual business and check back with me from time to time.~
 @32535 = ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into a deviously, deadly dart.~
 @32536 = ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into a very stealthy blade.~
-@32537 = ~I was able to infuse the Kerykeion piece with the large chunk of metal you brought me. It resulted in this extremely powerful katana.~
+@32537 = ~Welcome back, <CHARNAME>. I was able to infuse the Kerykeion piece with the large chunk of metal you brought me. It resulted in this extremely powerful katana.~
 @32538 = ~I'll be here for a little while longer to make sure the acquisition goes smoothly. Do you need any equipment in the meantime?~
 @32539 = ~Here, take these and prepare yourselves well for the coming skirmish. The Shadow Thieves are not untested in the ways of urban warfare.~
 @32540 = ~<CHARNAME>, over here a moment. A new weapon has just arrived from the far east, the Shortbow of the Shaar. I believe it may be of interest to you.~
@@ -58,3 +58,9 @@
 @32557 = ~Let us finish this then.~
 @32558 = ~Alright, but be quick about it. We can't wait for much longer.~
 @32559 = ~We can not stall for much longer. Have you finished making your preparations?~
+@32560 = ~The process was a success and the Kerykeion piece has been transformed into a deviously, deadly dart.~
+@32561 = ~The process was a success and the Kerykeion piece has been transformed into a very stealthy blade.~
+@32562 = ~I was able to infuse the Kerykeion piece with the large chunk of metal you brought me. It resulted in this extremely powerful katana.~
+@32563 = ~About the throwing dart.~
+@32564 = ~About the short sword.~
+@32565 = ~About the katana.~
