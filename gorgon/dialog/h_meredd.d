@@ -14,7 +14,7 @@ IF ~~ THEN BEGIN 2
        ++ @46504 /* Could you tell me more about the types of services offered here? */ GOTO 4
        ++ @46505 /* What are the fees for your services? */ GOTO 11
        ++ @46506 /* How does the process work for spending time with a courtesan? */ GOTO 14
-       +~Exists("h_Ilena")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
+       +~Exists("h_ilenac")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
        +~Global("h_TravelToDen","GLOBAL",0)~+ @46508 /* I'd like to spend some time with one of your courtesans. */ GOTO 30
        ++ @46509 /* I'm just looking around for now. */ GOTO 34
 END
@@ -25,7 +25,7 @@ IF ~NumTimesTalkedToGT(0) Global("h_Meredia","GLOBAL",0)~ THEN BEGIN 3
        ++ @46504 /* Could you tell me more about the types of services offered here? */ GOTO 4
        ++ @46505 /* What are the fees for your services? */ GOTO 11
        ++ @46506 /* How does the process work for spending time with a courtesan? */ GOTO 14
-       +~Exists("h_Ilena")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
+       +~Exists("h_ilenac")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
        +~Global("h_TravelToDen","GLOBAL",0)~+ @46508 /* I'd like to spend some time with one of your courtesans. */ GOTO 30
        ++ @46509 /* I'm just looking around for now. */ GOTO 34
 END
@@ -58,7 +58,7 @@ IF ~~ THEN BEGIN 10
    SAY @46517 /* Whether you seek a moment of quiet companionship, a listening ear, or a deeper connection, you will find solace and satisfaction within these walls. */
        ++ @46505 /* What are the fees for your services? */ GOTO 11
        ++ @46506 /* How does the process work for spending time with a courtesan? */ GOTO 14
-       +~Exists("h_Ilena")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
+       +~Exists("h_ilenac")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
        +~Global("h_TravelToDen","GLOBAL",0)~+ @46508 /* I'd like to spend some time with one of your courtesans. */ GOTO 30
        ++ @46509 /* I'm just looking around for now. */ GOTO 34
 END
@@ -75,7 +75,7 @@ IF ~~ THEN BEGIN 13
    SAY @46520 /* We pride ourselves on creating an environment that is safe, consensual, and thoroughly enjoyable for all involved, ensuring that your experience here is both memorable and satisfying. */
        ++ @46504 /* Could you tell me more about the types of services offered here? */ GOTO 4
        ++ @46506 /* How does the process work for spending time with a courtesan? */ GOTO 14
-       +~Exists("h_Ilena")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
+       +~Exists("h_ilenac")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
        +~Global("h_TravelToDen","GLOBAL",0)~+ @46508 /* I'd like to spend some time with one of your courtesans. */ GOTO 30
        ++ @46509 /* I'm just looking around for now. */ GOTO 34
 END
@@ -116,7 +116,7 @@ IF ~~ THEN BEGIN 22
    SAY @46529 /* Please, feel free to ask if you have any more questions or if you're ready to meet our courtesans. */
        ++ @46504 /* Could you tell me more about the types of services offered here? */ GOTO 4
        ++ @46505 /* What are the fees for your services? */ GOTO 11
-       +~Exists("h_Ilena")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
+       +~Exists("h_ilenac")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
        +~Global("h_TravelToDen","GLOBAL",0)~+ @46508 /* I'd like to spend some time with one of your courtesans. */ GOTO 30
        ++ @46509 /* I'm just looking around for now. */ GOTO 34
 END
@@ -452,7 +452,7 @@ END
 IF ~Global("h_Meredia","GLOBAL",1)~ THEN BEGIN 78
    SAY @46603 /* Welcome, <CHARNAME>. As the new guildmaster, you're entitled to our services, free of charge, naturally. */
        ++ @46504 /* Could you tell me more about the types of services offered here? */ GOTO 4
-       +~Exists("h_Ilena")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
+       +~Exists("h_ilenac")~+ @46507 /* Who is available for companionship this evening? */ GOTO 23
        +~Global("h_TravelToDen","GLOBAL",0)~+ @46508 /* I'd like to spend some time with one of your courtesans. */ GOTO 30
        ++ @46509 /* I'm just looking around for now. */ GOTO 34
 END
