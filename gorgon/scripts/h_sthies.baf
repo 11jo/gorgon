@@ -1,17 +1,17 @@
 IF
-	 Global("h_ShadowWar","GLOBAL",2)
-                  !Allegiance(Myself,ENEMY)
+	Global("h_ShadowWar","GLOBAL",2)
+	!Allegiance(Myself,ENEMY)
 THEN
 	 RESPONSE #100
-		  Enemy()
+		Enemy()
 END
 
 IF
 	 Global("h_ShadowWar","GLOBAL",4)
-	          !Allegiance(Myself,ENEMY)
+	!Allegiance(Myself,ENEMY)
 THEN
 	 RESPONSE #100
-	       	  Enemy()
+		Enemy()
 END
 
 IF
@@ -27,7 +27,7 @@ IF
 	!Allegiance(Myself,ENEMY)
 THEN
 	RESPONSE #100
-		 Enemy()
+		Enemy()
 END
 
 IF
@@ -35,8 +35,8 @@ IF
 	GlobalGT("h_BetrayBaldwin","GLOBAL",0)
 THEN
 	RESPONSE #100
-	         ChangeEnemyAlly(Myself,ALLY)
-	         ApplySpell(Myself,CHARM_KORAX)
+		ChangeEnemyAlly(Myself,ALLY)
+		ApplySpell(Myself,CHARM_KORAX)
 END
 
 IF
@@ -44,14 +44,21 @@ IF
 	Global("h_BetrayBaldwin","GLOBAL",0)
 THEN
 	RESPONSE #100
-	         SmallWait(3)
-	         EquipRanged()
-		 Attack("h_snak2c")
+		SmallWait(3)
+		EquipRanged()
+		Attack("h_snak2c")
 END
 
 IF
 	Global("h_ShadowWar","GLOBAL",10)
 THEN
 	RESPONSE #100
-	         EscapeArea()
+		EscapeArea()
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastAttackerOf(Myself))
 END
