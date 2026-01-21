@@ -36,7 +36,7 @@ BEGIN
 	OUTER_SET isEET = 0
         INCLUDE ~gorgon/lib/g3_bgee_cpmvars.tpa~
 END
-	
+
 ACTION_IF GAME_IS ~eet~
 BEGIN
 	OUTER_SPRINT "area_prefix" BG
@@ -51,12 +51,12 @@ END
 			COMPILE ~gorgon/dialog/JOh_WI.d~
 		PRINT ~Patch Alatos dialog for compatibility with BlackHearts
 		~
-		
+
 	END ELSE BEGIN
-	
+
 		PRINT ~ALATOS.dlg is already patched by BlackHearts mod for compatibility
 		~
-		
+
 END
 
 // Special compatibility with BlackHearts
@@ -352,19 +352,19 @@ COPY ~gorgon/areas/h_flamea.are~ ~override~
           // TO-DO: fix music entries
           WRITE_ASCII 0x8 ~BG6100~ //update WED resource filename
      END
-     
+
 COMPILE ~gorgon/scripts/h_fpitsa.baf~
 COPY ~gorgon/areas/h_fpitsa.are~ ~override~
      PATCH_IF (isEET == 1) BEGIN
           WRITE_ASCII 0x8 ~BG1002~ //update WED resource filename
      END
-     
+
 COMPILE ~gorgon/scripts/h_bmarka.baf~
 COPY ~gorgon/areas/h_bmarka.are~ ~override~
      PATCH_IF (isEET == 1) BEGIN
           WRITE_ASCII 0x8 ~BG0726~ //update WED resource filename
      END
-     
+
 COMPILE ~gorgon/scripts/h_bmar2a.baf~
 COPY ~gorgon/areas/h_bmar2a.are~ ~override~
      PATCH_IF (isEET == 1) BEGIN
@@ -436,7 +436,7 @@ COPY_EXISTING ~%area_prefix%3300.are~ ~override~
 
 COPY_EXISTING ~BART3.cre~ ~override~                          // Red Sheaf Bartender
      WRITE_ASCII 0x280 ~BART3~ #32
-     
+
 COPY_EXISTING ~MERCH2.cre~ ~override~                         // Carnival Merchant
      WRITE_ASCII 0x280 ~MERCH2~ #32
 
@@ -494,7 +494,7 @@ COPY ~gorgon/items/h_arow01.itm~ ~override/h_arow01.itm~      // Acid Arrow +2
      SAY NAME2 @4
      SAY UNIDENTIFIED_DESC @5
      SAY DESC @5
-     
+
 COPY ~gorgon/items/h_blun01.itm~ ~override/h_blun01.itm~      // Blackjack
      SAY NAME1 @6
      SAY NAME2 @6
@@ -554,7 +554,7 @@ COPY ~gorgon/items/h_book07.itm~ ~override/h_book07.itm~      // The Thief's Com
      SAY NAME2 @12
      SAY UNIDENTIFIED_DESC @19
      SAY DESC @19
-     
+
 COPY ~gorgon/items/h_book08.itm~ ~override/h_book08.itm~      // The Thief's Compendium(THAC0 / Damage)
      SAY NAME1 @12
      SAY NAME2 @12
@@ -764,13 +764,13 @@ COPY ~gorgon/items/h_misc16.itm~ ~override/h_misc16.itm~      // Torn Fabric
      SAY NAME2 @76
      SAY UNIDENTIFIED_DESC @77
      SAY DESC @77
-     
+
 COPY ~gorgon/items/h_misc17.itm~ ~override/h_misc17.itm~      // Karp's Ring
      SAY NAME1 @78
      SAY NAME2 @78
      SAY UNIDENTIFIED_DESC @79
      SAY DESC @79
-     
+
 COPY ~gorgon/items/h_misc18.itm~ ~override/h_misc18.itm~      // Gamesman's Stun Dart
      SAY NAME1 @80
      SAY NAME2 @80
@@ -842,7 +842,7 @@ COPY ~gorgon/items/h_sw1h02.itm~ ~override/h_sw1h02.itm~      // Kerykeion: Sthe
      SAY NAME2 @103
      SAY UNIDENTIFIED_DESC @104
      SAY DESC @104
-     
+
 COPY ~gorgon/items/h_sw1h03.itm~ ~override/h_sw1h03.itm~      // Stealthwhisper
      SAY NAME1 @105
      SAY NAME2 @106
@@ -854,25 +854,25 @@ COPY ~gorgon/items/h_misc19.itm~ ~override/h_misc19.itm~      // Noble Coin Purs
      SAY NAME2 @109
      SAY UNIDENTIFIED_DESC @110
      SAY DESC @110
-     
+
 COPY ~gorgon/items/h_misc20.itm~ ~override/h_misc20.itm~      // Noble Coin Purse(Lord)
      SAY NAME1 @109
      SAY NAME2 @109
      SAY UNIDENTIFIED_DESC @110
      SAY DESC @110
-     
+
 COPY ~gorgon/items/h_misc21.itm~ ~override/h_misc21.itm~      // Gorgon's Eye Coffer
      SAY NAME1 @111
      SAY NAME2 @111
      SAY UNIDENTIFIED_DESC @112
      SAY DESC @112
-     
+
 COPY ~gorgon/items/h_misc22.itm~ ~override/h_misc22.itm~      // Forged Letter
      SAY NAME1 @113
      SAY NAME2 @113
      SAY UNIDENTIFIED_DESC @114
      SAY DESC @114
-     
+
 COPY ~gorgon/items/h_misc23.itm~ ~override/h_misc23.itm~      // Guild Dues
      SAY NAME1 @115
      SAY NAME2 @115
@@ -884,31 +884,31 @@ COPY ~gorgon/items/h_misc24.itm~ ~override/h_misc24.itm~      // Moonlit Cascade
      SAY NAME2 @117
      SAY UNIDENTIFIED_DESC @118
      SAY DESC @118
-     
+
 COPY ~gorgon/items/h_misc25.itm~ ~override/h_misc25.itm~      // Moonshae Whiskey
      SAY NAME1 @119
      SAY NAME2 @119
      SAY UNIDENTIFIED_DESC @120
      SAY DESC @120
-     
+
 COPY ~gorgon/items/h_misc26.itm~ ~override/h_misc26.itm~      // Incendiary Device
      SAY NAME1 @121
      SAY NAME2 @121
      SAY UNIDENTIFIED_DESC @122
      SAY DESC @122
-     
+
 COPY ~gorgon/items/h_misc27.itm~ ~override/h_misc27.itm~      // Incriminating Evidence
      SAY NAME1 @123
      SAY NAME2 @123
      SAY UNIDENTIFIED_DESC @124
      SAY DESC @124
-     
+
 COPY ~gorgon/items/h_misc28.itm~ ~override/h_misc28.itm~      // Coin Purse
      SAY NAME1 @125
      SAY NAME2 @125
      SAY UNIDENTIFIED_DESC @126
      SAY DESC @126
-     
+
 COPY ~gorgon/items/h_trap01.itm~ ~override/h_trap01.itm~      // Piercing Trap
      SAY NAME1 @127
      SAY NAME2 @127
@@ -926,7 +926,7 @@ COPY ~gorgon/items/h_trap03.itm~ ~override/h_trap03.itm~      // Incendiary Trap
      SAY NAME2 @131
      SAY UNIDENTIFIED_DESC @132
      SAY DESC @132
-     
+
 COPY ~gorgon/items/h_trap04.itm~ ~override/h_trap04.itm~      // Elemental Trap
      SAY NAME1 @133
      SAY NAME2 @133
@@ -944,25 +944,25 @@ COPY ~gorgon/items/h_trap06.itm~ ~override/h_trap06.itm~      // Flash Trap
      SAY NAME2 @137
      SAY UNIDENTIFIED_DESC @138
      SAY DESC @138
-     
+
 COPY ~gorgon/items/h_misc29.itm~ ~override/h_misc29.itm~      // Netheril's Grimoire of Lost Arcana
      SAY NAME1 @139
      SAY NAME2 @139
      SAY UNIDENTIFIED_DESC @140
      SAY DESC @140
-     
+
 COPY ~gorgon/items/h_misc30.itm~ ~override/h_misc30.itm~      // Featherlung Serum
      SAY NAME1 @141
      SAY NAME2 @141
      SAY UNIDENTIFIED_DESC @142
      SAY DESC @142
-     
+
 COPY ~gorgon/items/h_misc31.itm~ ~override/h_misc31.itm~      // Flaming Fist Ledger
      SAY NAME1 @143
      SAY NAME2 @143
      SAY UNIDENTIFIED_DESC @144
      SAY DESC @144
-     
+
 COPY ~gorgon/items/h_ring05.itm~ ~override/h_ring05.itm~      // Strength Ring
      SAY NAME1 @145
      SAY NAME2 @145
@@ -974,7 +974,7 @@ COPY ~gorgon/items/h_ring06.itm~ ~override/h_ring06.itm~      // Dexterity Ring
      SAY NAME2 @147
      SAY UNIDENTIFIED_DESC @148
      SAY DESC @148
-     
+
 COPY ~gorgon/items/h_ring07.itm~ ~override/h_ring07.itm~      // Constitution Ring
      SAY NAME1 @149
      SAY NAME2 @149
@@ -998,13 +998,13 @@ COPY ~gorgon/items/h_ring10.itm~ ~override/h_ring10.itm~      // Charisma Ring
      SAY NAME2 @155
      SAY UNIDENTIFIED_DESC @156
      SAY DESC @156
-     
+
 COPY ~gorgon/items/h_amul02.itm~ ~override/h_amul02.itm~      // Nightstalker's Amulet
      SAY NAME1 @157
      SAY NAME2 @157
      SAY UNIDENTIFIED_DESC @158
      SAY DESC @158
-     
+
 COPY ~gorgon/items/h_leat01.itm~ ~override/h_leat01.itm~      // Isla Darkcloak's Shadowweave Armor
      SAY NAME1 @159
      SAY NAME2 @160
@@ -1016,7 +1016,7 @@ COPY ~gorgon/items/h_trap07.itm~ ~override/h_trap07.itm~      // Arachnid's Kiss
      SAY NAME2 @165
      SAY UNIDENTIFIED_DESC @166
      SAY DESC @166
-     
+
 COPY ~gorgon/items/h_misc33.itm~ ~override/h_misc33.itm~      // Tenets of the Unseen
      SAY NAME1 @167
      SAY NAME2 @167
@@ -1198,7 +1198,7 @@ COPY ~gorgon/cre/h_roguec.cre~ ~override/h_roguec.cre~        // Rogue
 COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Snake Head
      SAY NAME1 @931
      SAY NAME2 @931
-     
+
 COPY ~gorgon/cre/h_tguarc.cre~ ~override/h_tguarc.cre~        // Rogue(Tent)
      SAY NAME1 @931
      SAY NAME2 @931
@@ -1273,7 +1273,7 @@ COPY ~gorgon/cre/h_zylarc.cre~ ~override/h_zylarc.cre~        // Zylark
      SAY NAME2 @945
 	WRITE_ASCII SCRIPT_OVERRIDE ~h_zylars~
 	WRITE_ASCII SCRIPT_DEFAULT ~~
-     
+
 COPY ~gorgon/cre/h_pros2c.cre~ ~override/h_pros2c.cre~        // Prostitute(2)
      SAY NAME1 @908
      SAY NAME2 @908
@@ -1305,11 +1305,11 @@ COPY ~gorgon/cre/h_lordtc.cre~ ~override/h_lordtc.cre~        // Lord Thalric
 COPY ~gorgon/cre/h_ladyec.cre~ ~override/h_ladyec.cre~        // Lady Elara
      SAY NAME1 @950
      SAY NAME2 @950
-     
+
 COPY ~gorgon/cre/h_blackc.cre~ ~override/h_blackc.cre~        // Blackthorn
      SAY NAME1 @951
      SAY NAME2 @951
-     
+
 COPY ~gorgon/cre/h_blac2c.cre~ ~override/h_blac2c.cre~        // Blackthorn(2)
      SAY NAME1 @951
      SAY NAME2 @951
@@ -1317,15 +1317,15 @@ COPY ~gorgon/cre/h_blac2c.cre~ ~override/h_blac2c.cre~        // Blackthorn(2)
 COPY ~gorgon/cre/h_blactc.cre~ ~override/h_blactc.cre~        // Thief
      SAY NAME1 @952
      SAY NAME2 @952
-     
+
 COPY ~gorgon/cre/h_barthc.cre~ ~override/h_barthc.cre~        // Thief(Burning Wizard)
      SAY NAME1 @952
      SAY NAME2 @952
-     
+
 COPY ~gorgon/cre/h_thie2c.cre~ ~override/h_thie2c.cre~        // Thief(Gerard's Manor)
      SAY NAME1 @952
      SAY NAME2 @952
-     
+
 COPY ~gorgon/cre/h_citywc.cre~ ~override/h_citywc.cre~        // City Watch
      SAY NAME1 @953
      SAY NAME2 @953
@@ -1333,15 +1333,15 @@ COPY ~gorgon/cre/h_citywc.cre~ ~override/h_citywc.cre~        // City Watch
 COPY ~gorgon/cre/h_city2c.cre~ ~override/h_city2c.cre~        // City Watch(2)
      SAY NAME1 @953
      SAY NAME2 @953
-     
+
 COPY ~gorgon/cre/h_city3c.cre~ ~override/h_city3c.cre~        // City Watch(3)
      SAY NAME1 @953
      SAY NAME2 @953
-     
+
 COPY ~gorgon/cre/h_city4c.cre~ ~override/h_city4c.cre~        // City Watch(4)
      SAY NAME1 @953
      SAY NAME2 @953
-     
+
 COPY ~gorgon/cre/h_city5c.cre~ ~override/h_city5c.cre~        // City Watch(5)
      SAY NAME1 @953
      SAY NAME2 @953
@@ -1349,7 +1349,7 @@ COPY ~gorgon/cre/h_city5c.cre~ ~override/h_city5c.cre~        // City Watch(5)
 COPY ~gorgon/cre/h_city6c.cre~ ~override/h_city6c.cre~        // City Watch(6)
      SAY NAME1 @953
      SAY NAME2 @953
-     
+
 COPY ~gorgon/cre/h_citygc.cre~ ~override/h_citygc.cre~        // City Watch(Ally)
      SAY NAME1 @953
      SAY NAME2 @953
@@ -1361,7 +1361,7 @@ COPY ~gorgon/cre/h_citybc.cre~ ~override/h_citybc.cre~        // City Watch(Enem
 COPY ~gorgon/cre/h_whitec.cre~ ~override/h_whitec.cre~        // Commander Whitewood
      SAY NAME1 @954
      SAY NAME2 @954
-     
+
 COPY ~gorgon/cre/h_whit2c.cre~ ~override/h_whit2c.cre~        // Commander Whitewood
      SAY NAME1 @954
      SAY NAME2 @954
@@ -1373,11 +1373,11 @@ COPY ~gorgon/cre/h_valerc.cre~ ~override/h_valerc.cre~        // Valera
 COPY ~gorgon/cre/h_inspec.cre~ ~override/h_inspec.cre~        // Inspector Branic
      SAY NAME1 @956
      SAY NAME2 @956
-     
+
 COPY ~gorgon/cre/h_decoyc.cre~ ~override/h_decoyc.cre~        // Inspector Branic(Decoy)
      SAY NAME1 @956
      SAY NAME2 @956
-     
+
 COPY ~gorgon/cre/h_ishanc.cre~ ~override/h_ishanc.cre~        // Ishani
      SAY NAME1 @957
      SAY NAME2 @957
@@ -1385,11 +1385,11 @@ COPY ~gorgon/cre/h_ishanc.cre~ ~override/h_ishanc.cre~        // Ishani
 COPY ~gorgon/cre/h_eudikc.cre~ ~override/h_eudikc.cre~        // Lady Eudika
      SAY NAME1 @958
      SAY NAME2 @958
-     
+
 COPY ~gorgon/cre/h_jcookc.cre~ ~override/h_jcookc.cre~        // Cook
      SAY NAME1 @959
      SAY NAME2 @959
-     
+
 COPY ~gorgon/cre/h_clarec.cre~ ~override/h_clarec.cre~        // Lieutenant Clare Gallant
      SAY NAME1 @960
      SAY NAME2 @960
@@ -1401,23 +1401,23 @@ COPY ~gorgon/cre/h_therec.cre~ ~override/h_therec.cre~        // Lieutenant Ther
 COPY ~gorgon/cre/h_tempfc.cre~ ~override/h_tempfc.cre~        // Templar Knight(Fighter)
      SAY NAME1 @962
      SAY NAME2 @962
-     
+
 COPY ~gorgon/cre/h_temprc.cre~ ~override/h_temprc.cre~        // Templar Knight(Ranger)
      SAY NAME1 @962
      SAY NAME2 @962
-     
+
 COPY ~gorgon/cre/h_tempmc.cre~ ~override/h_tempmc.cre~        // Templar Knight(Mage)
      SAY NAME1 @962
      SAY NAME2 @962
-     
+
 COPY ~gorgon/cre/h_tempcc.cre~ ~override/h_tempcc.cre~        // Templar Knight(Cleric)
      SAY NAME1 @962
      SAY NAME2 @962
-     
+
 COPY ~gorgon/cre/h_procuc.cre~ ~override/h_procuc.cre~        // Procus
      SAY NAME1 @963
      SAY NAME2 @963
-     
+
 COPY ~gorgon/cre/h_selenc.cre~ ~override/h_selenc.cre~        // Selena Stardancer
      SAY NAME1 @964
      SAY NAME2 @964
@@ -1425,23 +1425,23 @@ COPY ~gorgon/cre/h_selenc.cre~ ~override/h_selenc.cre~        // Selena Stardanc
 COPY ~gorgon/cre/h_pira2c.cre~ ~override/h_pira2c.cre~        // Pirate(2)
      SAY NAME1 @965
      SAY NAME2 @965
-     
+
 COPY ~gorgon/cre/h_piratc.cre~ ~override/h_piratc.cre~        // Pirate
      SAY NAME1 @965
      SAY NAME2 @965
-     
+
 COPY ~gorgon/cre/h_tmercc.cre~ ~override/h_tmercc.cre~        // Merchant
      SAY NAME1 @966
      SAY NAME2 @966
-     
+
 COPY ~gorgon/cre/h_vitiac.cre~ ~override/h_vitiac.cre~        // Vitiare
      SAY NAME1 @967
      SAY NAME2 @967
-     
+
 COPY ~gorgon/cre/h_deadec.cre~ ~override/h_deadec.cre~        // Diomedes
      SAY NAME1 @968
      SAY NAME2 @968
-     
+
 COPY ~gorgon/cre/h_dead2c.cre~ ~override/h_dead2c.cre~        // Diomedes(2)
      SAY NAME1 @968
      SAY NAME2 @968
@@ -1449,19 +1449,19 @@ COPY ~gorgon/cre/h_dead2c.cre~ ~override/h_dead2c.cre~        // Diomedes(2)
 COPY ~gorgon/cre/h_catcac.cre~ ~override/h_catcac.cre~        // Shadow
      SAY NAME1 @969
      SAY NAME2 @969
-     
+
 COPY ~gorgon/cre/h_pits1c.cre~ ~override/h_pits1c.cre~        // Khalid Blackrock
      SAY NAME1 @970
      SAY NAME2 @970
-     
+
 COPY ~gorgon/cre/h_pits2c.cre~ ~override/h_pits2c.cre~        // Grom Torrek
      SAY NAME1 @971
      SAY NAME2 @971
-     
+
 COPY ~gorgon/cre/h_pits3c.cre~ ~override/h_pits3c.cre~        // Lyria Winterheart
      SAY NAME1 @972
      SAY NAME2 @972
-     
+
 COPY ~gorgon/cre/h_pits4c.cre~ ~override/h_pits4c.cre~        // Serra Swiftwind
      SAY NAME1 @973
      SAY NAME2 @973
@@ -1469,7 +1469,7 @@ COPY ~gorgon/cre/h_pits4c.cre~ ~override/h_pits4c.cre~        // Serra Swiftwind
 COPY ~gorgon/cre/h_pits5c.cre~ ~override/h_pits5c.cre~        // Roran 'Iron Fist' Zlenka
      SAY NAME1 @974
      SAY NAME2 @974
-     
+
 COPY ~gorgon/cre/h_sorenc.cre~ ~override/h_sorenc.cre~        // Soren
      SAY NAME1 @975
      SAY NAME2 @975
@@ -1481,7 +1481,7 @@ COPY ~gorgon/cre/h_thalic.cre~ ~override/h_thalic.cre~        // Thalia
 COPY ~gorgon/cre/h_islacc.cre~ ~override/h_islacc.cre~        // Isla Darkcloak
      SAY NAME1 @977
      SAY NAME2 @977
-     
+
 COPY ~gorgon/cre/h_isla2c.cre~ ~override/h_isla2c.cre~        // Isla Darkcloak(2)
      SAY NAME1 @977
      SAY NAME2 @977
@@ -1497,7 +1497,7 @@ COPY ~gorgon/cre/h_bmar2c.cre~ ~override/h_bmar2c.cre~        // Black Market Me
 COPY ~gorgon/cre/h_bmar3c.cre~ ~override/h_bmar3c.cre~        // Black Market Merchant(Traps)
      SAY NAME1 @978
      SAY NAME2 @978
-     
+
 COPY ~gorgon/cre/h_bmar4c.cre~ ~override/h_bmar4c.cre~        // Black Market Merchant(Trinkets)
      SAY NAME1 @978
      SAY NAME2 @978
@@ -1505,15 +1505,15 @@ COPY ~gorgon/cre/h_bmar4c.cre~ ~override/h_bmar4c.cre~        // Black Market Me
 COPY ~gorgon/cre/h_bmar5c.cre~ ~override/h_bmar5c.cre~        // Black Market Merchant(Weapons/Armor)
      SAY NAME1 @978
      SAY NAME2 @978
-     
+
 COPY ~gorgon/cre/h_velenc.cre~ ~override/h_velenc.cre~        // Captain Velendra
      SAY NAME1 @979
      SAY NAME2 @979
-     
+
 COPY ~gorgon/cre/h_thaldc.cre~ ~override/h_thaldc.cre~        // Thaldor
      SAY NAME1 @980
      SAY NAME2 @980
-     
+
 COPY ~gorgon/cre/h_doriac.cre~ ~override/h_doriac.cre~        // Dorian
      SAY NAME1 @981
      SAY NAME2 @981
@@ -1521,11 +1521,11 @@ COPY ~gorgon/cre/h_doriac.cre~ ~override/h_doriac.cre~        // Dorian
 COPY ~gorgon/cre/h_silasc.cre~ ~override/h_silasc.cre~        // Silas
      SAY NAME1 @982
      SAY NAME2 @982
-     
+
 COPY ~gorgon/cre/h_alaric.cre~ ~override/h_alaric.cre~        // Alaric
      SAY NAME1 @983
      SAY NAME2 @983
-     
+
 COPY ~gorgon/cre/h_varlic.cre~ ~override/h_varlic.cre~        // Lord Varlind
      SAY NAME1 @984
      SAY NAME2 @984
@@ -1549,7 +1549,7 @@ COPY ~gorgon/cre/h_lied2c.cre~ ~override/h_lied2c.cre~
      SAY NAME1 @921
      SAY NAME2 @921
      SAY INITIAL_MEETING @1043
-     
+
 COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~
      SAY NAME1 @921
      SAY NAME2 @921
@@ -1754,7 +1754,7 @@ COPY_EXISTING_REGEXP ~READ.*cre~ ~override~                   // Reader
      ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 COPY_EXISTING_REGEXP ~MONKT.*cre~ ~override~                  // Tutor
      ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
-     
+
 COPY_EXISTING_REGEXP ~NOB.*cre~ ~override~                    // Noble
      ADD_CRE_ITEM ~RNDGEM04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 COPY_EXISTING_REGEXP ~NOW.*cre~ ~override~
