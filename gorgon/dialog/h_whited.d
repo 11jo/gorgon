@@ -119,7 +119,7 @@ END
 IF ~~ THEN BEGIN 21
    SAY @67529 /* That's what I like to hear. We'll be right behind you. */
 IF ~~ THEN DO ~
-   SetGlobal("h_WhitewoodDialog","GLOBAL",2)
+   SetGlobal("h_WhitewoodDialog","GLOBAL",3)
    SetGlobal("h_WatchAssault","GLOBAL",1)
    ClearAllActions()
    StartCutSceneMode()
