@@ -888,31 +888,30 @@ IF ~~ THEN BEGIN PAY_1
    SAY @8255 /* Based on your instructions and our guild expenses, we have accumulated a substantial sum of profits. */
        +~GlobalLT("h_GuildRisk","GLOBAL",3)~+ @8256 /* How much will I be receiving? */ GOTO PAY_2
        +~GlobalLT("h_GuildRisk","GLOBAL",8) GlobalGT("h_GuildRisk","GLOBAL",2)~+ @8256 /* How much will I be receiving? */ GOTO PAY_3
-       +~Global("h_GuildRisk","GLOBAL",8)~+ @8256 /* How much will I be receiving? */ GOTO PAY_4
+       +~GlobalGT("h_GuildRisk","GLOBAL",7)~+ @8256 /* How much will I be receiving? */ GOTO PAY_4
 END
 
 IF ~~ THEN BEGIN PAY_2
    SAY @8257 /* The guild is operating at a low level of risk and has managed to bring in a total of 1000 gold coins. Would you like to make any changes to our activites? */
-       ++ @8258 /* I will keep them as they are for now. */ DO ~ GiveGoldForce(1000)~ GOTO PAY_5
-       ++ @8259 /* I'd like to change their set of instructions. */ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0)~ GOTO GUILD_1
+       ++ @8258 /* I will keep them as they are for now. */ DO ~GiveGoldForce(1000)~ GOTO PAY_5
+       ++ @8259 /* I'd like to change their set of instructions. */ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0) GiveGoldForce(1000)~ GOTO GUILD_1
 END
 
 IF ~~ THEN BEGIN PAY_3
    SAY @8260 /* The guild is operating at a moderate level of risk and has managed to bring in a total of 2000 gold coins. Would you like to make any changes to our activites? */
        ++ @8258 /* I will keep them as they are for now. */ DO ~ GiveGoldForce(2000)~ GOTO PAY_5
-       ++ @8259 /* I'd like to change their set of instructions. */ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0) GiveGoldForce(1500)~ GOTO GUILD_1
+       ++ @8259 /* I'd like to change their set of instructions. */ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0) GiveGoldForce(2000)~ GOTO GUILD_1
 END
 
 IF ~~ THEN BEGIN PAY_4
    SAY @8261 /* The guild is operating at a high level of risk and has managed to bring in a total of 3000 gold coins. Would you like to make any changes to our activites? */
        ++ @8258 /* I will keep them as they are for now. */ DO ~ GiveGoldForce(3000)~ GOTO PAY_5
-       ++ @8259 /* I'd like to change their set of instructions. */ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0) GiveGoldForce(2000)~ GOTO GUILD_1
+       ++ @8259 /* I'd like to change their set of instructions. */ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0) GiveGoldForce(3000)~ GOTO GUILD_1
 END
 
 IF ~~ THEN BEGIN PAY_5
    SAY @8262 /* Very good. Report back to me in one week's time. */
-IF ~~ THEN DO ~
-   SetGlobalTimer("h_GuildPayout","GLOBAL",SEVEN_DAYS)~ EXIT
+IF ~~ THEN DO ~SetGlobalTimer("h_GuildPayout","GLOBAL",SEVEN_DAYS)~ EXIT
 END
 
 IF ~Global("h_Saradin","GLOBAL",5)~ THEN BEGIN PROFIT_0

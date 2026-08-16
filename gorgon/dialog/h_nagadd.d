@@ -451,7 +451,7 @@ IF ~~ THEN DO ~
 END
 
 
-IF WEIGHT #-1 ~Global("h_BookNumber","GLOBAL",17) Gender(Player1,MALE)~ THEN BEGIN END_0
+IF WEIGHT #-1 ~Global("h_BookNumber","GLOBAL",17) /* Gender(Player1,MALE) */~ THEN BEGIN END_0 /* Gender(Player1,MALE) */
    SAY @48073 /* Your dedication to the Lord of Shadows, to the sublime art of thievery, is unparalleled. Few dare to dream of such an accomplishment, and even fewer achieve it. */ IF ~~ THEN GOTO END_1
 END
 
@@ -478,7 +478,7 @@ IF ~~ THEN DO ~
    GiveItemCreate("h_sw1h03",LastTalkedToBy,0,0,0)~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_BookNumber","GLOBAL",18) Gender(Player1,FEMALE)~ THEN BEGIN END_6
+IF WEIGHT #-1 ~Global("h_BookNumber","GLOBAL",18)~ THEN BEGIN END_6 /* Gender(Player1,FEMALE) */
    SAY @48079 /* Shadow-walker, your presence graces this humble market. The whispers of your deeds echo even in the silence. */ IF ~~ THEN GOTO END_7
 END
 
