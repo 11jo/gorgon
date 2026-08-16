@@ -1,20 +1,18 @@
 IF
-         Global("h_FlamingFist","GLOBAL",1)
+	Global("h_FlamingFist","GLOBAL",1)
 THEN
-         RESPONSE #100
-                  CreateCreature("h_flam2c",[486.612],N)
-                  CreateCreature("h_flamec",[440.661],N)
-                  CreateCreature("h_flamec",[524.658],N)
-                  SetGlobal("h_FlamingFist","GLOBAL",2)
-                  Continue()
-
+	RESPONSE #100
+		CreateCreature("h_flam2c",[486.612],N)
+		CreateCreature("h_flamec",[440.661],N)
+		CreateCreature("h_flamec",[524.658],N)
+		SetGlobal("h_FlamingFist","GLOBAL",2)
+		Continue()
 END
 
 IF
-         Global("h_ShadowWar","GLOBAL",7)
+	Global("h_ShadowWar","GLOBAL",7)
 THEN
-         RESPONSE #100
-                  CreateCreature("h_injurc",[487.536],N)
-                  SetGlobal("h_ShadowWar","GLOBAL",8)
-
+	RESPONSE #100
+		CreateCreature("h_injurc",[487.536],N)
+		SetGlobal("h_ShadowWar","GLOBAL",8)
 END

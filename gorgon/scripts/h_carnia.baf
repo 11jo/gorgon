@@ -63,12 +63,12 @@ THEN
 END
 
 IF
-         Global("h_SpawnSnakeHead","GLOBAL",1)
-         Global("h_BetrayBaldwin","GLOBAL",0)
-         Global("h_RandomEncounterForced","GLOBAL",1)
+	Global("h_SpawnSnakeHead","GLOBAL",1)
+	Global("h_BetrayBaldwin","GLOBAL",0)
+	!Global("h_RandomEncounterForced","GLOBAL",2)
 THEN
-         RESPONSE #100
-                  SetGlobal("h_RandomEncounterForced","GLOBAL",2)
-                  ForceRandomEncounterEntry("h_flamea","h_flamee")
-                  Continue()
+	RESPONSE #100
+		SetGlobal("h_RandomEncounterForced","GLOBAL",2)
+		ForceRandomEncounterEntry("h_flamea","h_flamee")
+		Continue()
 END
