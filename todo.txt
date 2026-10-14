@@ -1,0 +1,11 @@
+Hello !
+
+This pull request try to resolve some players report since your last comment.
+
+And also the previous [pull request content ](https://github.com/TotalMilk90/gorgon/pull/15)
+
+---
+
+Remaining issues to look at : 
+
+- https://www.gibberlings3.net/forums/topic/35938-the-gorgons-eye-thieves-guild-in-beregost-mod/?do=findComment&comment=343020
