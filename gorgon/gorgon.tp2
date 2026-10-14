@@ -26,6 +26,16 @@ LANGUAGE
 ~gorgon/lang/schinese/quests.tra~
 ~gorgon/lang/schinese/setup.tra~
 
+LANGUAGE
+    ~French (translation by Deratiseur)~
+    ~french~
+//~gorgon/lang/french/dialog.tra~
+~gorgon/lang/french/items.tra~
+~gorgon/lang/french/names.tra~
+~gorgon/lang/french/npcs.tra~
+~gorgon/lang/french/quests.tra~
+~gorgon/lang/french/setup.tra~
+
 BEGIN @1
 
 // EET compatibility header
