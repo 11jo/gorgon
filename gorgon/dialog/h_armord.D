@@ -21,29 +21,29 @@ END
 IF ~~ THEN BEGIN M3
    SAY @10511 /* You'll regret this, mark my words! I'll be sure to spread the word about the likes of you. You've made an enemy today, and you won't escape the consequences! */
 IF ~~ THEN DO ~
-	GiveItemCreate("P#BAG02","merch2",0,0,0) // BG1 npc compatibility
-	GiveItemCreate("P#BAG01","merch2",0,0,0) // BG1 npc compatibility
-	GiveItemCreate("cd23whe","merch2",0,0,0) // The Calling compatibility
+//	GiveItemCreate("P#BAG02","h_merch2",0,0,0) // BG1 npc compatibility
+//	GiveItemCreate("P#BAG01","h_merch2",0,0,0) // BG1 npc compatibility
+//	GiveItemCreate("cd23whe","h_merch2",0,0,0) // The Calling compatibility
 		SetGlobal("h_ProcusQuest","GLOBAL",2)
 		AddJournalEntry(@341,QUEST)
 		ReputationInc(-1)
-	DropItem("P#BAG02",[-1.-1]) // BG1 npc compatibility
-	DropItem("P#BAG01",[-1.-1]) // BG1 npc compatibility
-	DropItem("cd23whe",[-1.-1]) // The Calling compatibility
+//	DropItem("P#BAG02",[-1.-1]) // BG1 npc compatibility
+//	DropItem("P#BAG01",[-1.-1]) // BG1 npc compatibility
+//	DropItem("cd23whe",[-1.-1]) // The Calling compatibility
 		EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN M4
    SAY @10512 /* Collapsing, you say? Gods, I don't fancy getting squished under a pile of canvas. Right, I'm off then. Good luck with... whatever it is you're up to. */
 IF ~~ THEN DO ~
-	GiveItemCreate("P#BAG02","merch2",0,0,0) // BG1 npc compatibility
-	GiveItemCreate("P#BAG01","merch2",0,0,0) // BG1 npc compatibility
-	GiveItemCreate("cd23whe","merch2",0,0,0) // The Calling compatibility
+//	GiveItemCreate("P#BAG02","h_merch2",0,0,0) // BG1 npc compatibility
+//	GiveItemCreate("P#BAG01","h_merch2",0,0,0) // BG1 npc compatibility
+//	GiveItemCreate("cd23whe","h_merch2",0,0,0) // The Calling compatibility
 		SetGlobal("h_ProcusQuest","GLOBAL",2)
 		AddJournalEntry(@341,QUEST)
-	DropItem("P#BAG02",[-1.-1]) // BG1 npc compatibility
-	DropItem("P#BAG01",[-1.-1]) // BG1 npc compatibility
-	DropItem("cd23whe",[-1.-1]) // The Calling compatibility
+//	DropItem("P#BAG02",[-1.-1]) // BG1 npc compatibility
+//	DropItem("P#BAG01",[-1.-1]) // BG1 npc compatibility
+//	DropItem("cd23whe",[-1.-1]) // The Calling compatibility
 		EscapeArea()~ EXIT
 END
 
@@ -108,9 +108,9 @@ IF ~~ THEN DO ~
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD05",LastTalkedToBy,0,0,0)
-   GiveItemCreate("P#BAG02",LastTalkedToBy,0,0,0) // BG1 npc compatibility
-   GiveItemCreate("P#BAG01",LastTalkedToBy,0,0,0) // BG1 npc compatibility
-   GiveItemCreate("cd23whe",LastTalkedToBy,0,0,0) // The Calling compatibility
+//   GiveItemCreate("P#BAG02",LastTalkedToBy,0,0,0) // BG1 npc compatibility
+//   GiveItemCreate("P#BAG01",LastTalkedToBy,0,0,0) // BG1 npc compatibility
+//   GiveItemCreate("cd23whe",LastTalkedToBy,0,0,0) // The Calling compatibility
    EscapeArea()~ EXIT
 END
 
@@ -139,9 +139,9 @@ IF ~~ THEN DO ~
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD03",LastTalkedToBy,0,0,0)
    GiveItemCreate("SHLD05",LastTalkedToBy,0,0,0)
-   GiveItemCreate("P#BAG02",LastTalkedToBy,0,0,0) // BG1 npc compatibility
-   GiveItemCreate("P#BAG01",LastTalkedToBy,0,0,0) // BG1 npc compatibility
-   GiveItemCreate("cd23whe",LastTalkedToBy,0,0,0) // The Calling compatibility
+//   GiveItemCreate("P#BAG02",LastTalkedToBy,0,0,0) // BG1 npc compatibility
+//   GiveItemCreate("P#BAG01",LastTalkedToBy,0,0,0) // BG1 npc compatibility
+//   GiveItemCreate("cd23whe",LastTalkedToBy,0,0,0) // The Calling compatibility
    EscapeArea()~ EXIT
 END
 
@@ -180,10 +180,10 @@ END
 IF ~~ THEN BEGIN M16
 	SAY @10541 /* Of course, friend. Allow me to get that for you. */
 		IF ~~ THEN DO ~
-   GiveItemCreate("P#BAG02","merch2",0,0,0) // BG1 npc compatibility
-   GiveItemCreate("P#BAG01","merch2",0,0,0) // BG1 npc compatibility
-   GiveItemCreate("cd23whe","merch2",0,0,0) // The Calling compatibility
-						Kill("merch2")
+//   GiveItemCreate("P#BAG02","h_merch2",0,0,0) // BG1 npc compatibility
+//   GiveItemCreate("P#BAG01","h_merch2",0,0,0) // BG1 npc compatibility
+//   GiveItemCreate("cd23whe","h_merch2",0,0,0) // The Calling compatibility
+						Kill("h_merch2")
 						SetGlobal("h_ProcusQuest","GLOBAL",2)
 						AddJournalEntry(@341,QUEST)
 						ReputationInc(-2)~ EXIT

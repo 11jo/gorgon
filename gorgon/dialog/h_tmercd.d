@@ -9,5 +9,5 @@ END
 IF ~~ THEN BEGIN STORE_1
    SAY @63003 /* Step right up, my friend. */
 IF ~~ THEN DO ~
-   StartStore("h_tensto",LastTalkedToBy(Myself))~ EXIT
+   StartStore("sto4901",LastTalkedToBy(Myself))~ EXIT // StartStore("h_tensto",LastTalkedToBy(Myself))~
 END

@@ -59,6 +59,12 @@ END
 
 END
 
+// Special compatibility Nashkel festival merchznt
+COPY_EXISTING ~merch2.cre~ ~override~
+	WRITE_ASCII 0x280 ~merch2~ (32) // Script name / Death variable
+COPY_EXISTING ~merch2.cre~ ~override/h_merch2.cre~
+	WRITE_ASCII 0x280 ~h_merch2~ (32) 
+
 // Special compatibility with BlackHearts
 
 // Dialog

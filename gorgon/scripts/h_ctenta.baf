@@ -1,3 +1,31 @@
+/*
+// Make original merchant come back after the quest is done ?
+// On hold, using new merchant h_tmercc.cre to open origibal store sto4901 instead (see h_tmercd)
+IF
+         Global("h_ProcusQuest","GLOBAL",1)
+         IsActive("merch2")
+THEN
+         RESPONSE #100
+                  Deactivate("merch2")
+                  CreateCreature("h_merch2",[446.408],SW)
+                  Continue()
+END
+
+IF
+         GlobalGT("h_ProcusQuest","GLOBAL",XX)
+         !IsActive("merch2")
+         OR(2)
+              Dead("h_merch2")
+              !InMyArea("h_merch2")
+THEN
+         RESPONSE #100
+                  Activate("merch2")
+				  CreateVisualEffectObject("spdimndr","merch2")
+				  DisplayStringHead("merch2",~Ho ! ho !~)
+                  Continue()
+END
+*/
+
 IF
          Global("h_SpawnProcus","GLOBAL",3)
 THEN
